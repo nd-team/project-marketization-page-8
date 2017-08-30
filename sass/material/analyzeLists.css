@@ -1,0 +1,290 @@
+/*
+!*物资分析列表*!
+.analyzeLists {
+    position: relative;
+    height:820px;
+
+.analyzeList {
+    flex: 1;
+    width: 101%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+ul {
+    width: 120%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+li {
+    display: inline-flex;
+    background: #ffffff;
+    margin: 1%;
+    width: 23%;
+    height: 200px;
+.analylist {
+    display: inline-flex;
+    flex-direction: column;
+    background: #ffffff;
+    width: 100%;
+.listTop {
+    display: flex;
+    flex-direction: column;
+    padding: 4% 4% 5% 5%;
+    flex: 5;
+
+.Top {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+span {
+    display: inline-block;
+    flex: 6;
+}
+.checkbox-group {
+    flex: 2;
+    text-align: right;
+#one {
+    width: 1px;
+    height: 1px;
+}
+}
+.checkbox-group input {
+    opacity: 0;
+    display: inline-block;
+}
+.checkbox-group input[type=checkbox] + label:before, .checkbox-group input[type=radio] + label:before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    content: '';
+    color: #fff;
+    border: 1px solid #5a9bfd;
+    border-radius: 2px;
+}
+.checkbox-group input[type=checkbox]:checked + label:before, .checkbox-group input[type=radio]:checked + label:before {
+    content: '\2713';
+    color: #fff;
+    background-color: #5a9bfd;
+    border-radius: 2px;
+    font-size: 16px;
+    text-align: center;
+}
+}
+.Topcon {
+    display: flex;
+    flex-direction: column;
+p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex: 1;
+    font-size: 12px;
+    color: #999999;
+    padding-top: 3%;
+span {
+    display: inline-block;
+}
+.area {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-right: 10%;
+
+}
+.type {
+    display: inline-block;
+    flex: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+}
+}
+}
+.Topdown {
+    display: flex;
+    flex: 3;
+    width: 100%;
+    border-top: 1px solid #eaeaeb;
+    background-color: #fbfbfd;
+    line-height: 100%;
+
+p {
+    flex: 1;
+    height: 22px;
+    text-align: center;
+    margin: 5% auto;
+    border-right: 1px solid #eaeaeb;
+a {
+    display: inline-block;
+    height: 22px;
+    width: 100%;
+    color: #333333;
+    font-size: 16px;
+    line-height: 22px;
+
+.list-icon {
+    display: inline-block;
+svg {
+    fill: #d0d0d1;
+    stroke: 1px solid #f4f2fc;
+    width: 1.8rem;
+    height: 1.7rem;
+    vertical-align: middle;
+}
+@media (min-width: 1000px) and (max-width: 1200px){
+    svg{
+        width: 1.2rem;
+        height: 1.3rem;
+    }
+}
+
+}
+}
+@media (min-width: 1000px) and (max-width: 1200px){
+    a{
+        font-size: 14px;
+    }
+}
+}
+@media (min-width: 1100px) and (max-width: 1600px){
+    p{
+        margin: 9% auto;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1200px){
+    p{
+        margin: 10% auto;
+    }
+}
+p:nth-child(3) {
+    border-right: none;
+}
+a .list-icon svg:hover {
+    fill: #5a9bfd;
+}
+}
+}
+}
+@media (min-width: 1000px) and (max-width: 1200px){
+    li{
+        height:190px;
+    }
+}
+}
+}
+
+.condown_All {
+    position: absolute;
+    bottom:10px;
+    width: 100%;
+    left:0px;
+.condown {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+.downLeft {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    line-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #666666;
+    width: 30%;
+
+.Left_one {
+    display: inline-block;
+    flex: 2;
+    background-color: white;
+    line-height: 40px;
+    text-align: center;
+    padding: 0% 4% 0% 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #666666;
+    -moz-appearance: none; !* Firefox *!
+    -webkit-appearance: none; !* Safari 和 Chrome *!
+    border-width: 0px;
+    outline-color: #ffffff;
+option {
+    border-color: #ffffff;
+}
+
+}
+select::-ms-expand {
+    display: none;
+}
+.inactive {
+    background: url(/images/up.png) no-repeat 96% center white;
+
+}
+.inactives {
+    background: url(/images/down.png) no-repeat 96% center;
+}
+.Left_two {
+    display: inline-block;
+    flex: 8;
+    font-size: 14px;
+    line-height: 40px;
+    margin-left: 1%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+}
+.downRight {
+    display: flex;
+    font-size: 14px;
+    line-height: 40px;
+    margin-right: 1%;
+
+ul {
+    width: 101%;
+    display: flex;
+    flex-direction: row;
+li {
+    display: inline-block;
+    flex-wrap: nowrap;
+    font-size: 14px;
+    padding: 0px 15px;
+    margin-right: 1%;
+    border-radius: 2px;
+    background-color: white;
+    color: #666666;
+
+}
+.li1 {
+    margin-left: 1%;
+    width: 88px;
+    text-align: center;
+}
+.li2 {
+    margin-left: 1%;
+    margin-right: 0%;
+    width: 44px;
+    color: #5a9bfd;
+}
+.active {
+    background-color: #5a9bfd;
+    color: white;
+}
+}
+}
+}
+}*/

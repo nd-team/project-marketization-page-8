@@ -242,7 +242,7 @@ html{
     }
   }*/
 /*物资分析列表*/
-.analyzeLists {
+/*.analyzeLists {
   position: relative;
   height:820px;
 
@@ -458,8 +458,287 @@ html{
           -o-text-overflow: ellipsis;
           white-space: nowrap;
           color: #666666;
-          -moz-appearance: none; /* Firefox */
-          -webkit-appearance: none; /* Safari 和 Chrome */
+          -moz-appearance: none; !* Firefox *!
+          -webkit-appearance: none; !* Safari 和 Chrome *!
+          border-width: 0px;
+          outline-color: #ffffff;
+          option {
+            border-color: #ffffff;
+          }
+
+        }
+        select::-ms-expand {
+          display: none;
+        }
+        .inactive {
+          background: url(/images/up.png) no-repeat 96% center white;
+
+        }
+        .inactives {
+          background: url(/images/down.png) no-repeat 96% center;
+        }
+        .Left_two {
+          display: inline-block;
+          flex: 8;
+          font-size: 14px;
+          line-height: 40px;
+          margin-left: 1%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -o-text-overflow: ellipsis;
+          white-space: nowrap;
+
+        }
+      }
+      .downRight {
+        display: flex;
+        font-size: 14px;
+        line-height: 40px;
+        margin-right: 1%;
+
+        ul {
+          width: 101%;
+          display: flex;
+          flex-direction: row;
+          li {
+            display: inline-block;
+            flex-wrap: nowrap;
+            font-size: 14px;
+            padding: 0px 15px;
+            margin-right: 1%;
+            border-radius: 2px;
+            background-color: white;
+            color: #666666;
+
+          }
+          .li1 {
+            margin-left: 1%;
+            width: 88px;
+            text-align: center;
+          }
+          .li2 {
+            margin-left: 1%;
+            margin-right: 0%;
+            width: 44px;
+            color: #5a9bfd;
+          }
+          .active {
+            background-color: #5a9bfd;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}*/
+/*资金回笼列表*/
+.drawalLists {
+  position: relative;
+  height:900px;
+
+  .drawalList {
+    flex: 1;
+    width: 101%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    ul {
+      width: 120%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      li {
+        display: inline-flex;
+        margin:1% 1.5%;
+        width: 22%;
+        height: 354px;
+        .list {
+          display: inline-flex;
+          flex-direction: column;
+          width: 100%;
+          background:#ffffff;
+
+          .listTop {
+            display: flex;
+            flex-direction: column;
+            padding: 4% 4% 5% 5%;
+            flex: 2;
+            box-sizing: border-box;
+            .topOne{
+                display:flex;
+                flex-direction: row;
+                flex:1;
+              span{
+                display:inline-block;
+                flex:6;
+                font-size:18px;
+                color:#ffffff;
+                font-weight: normal;
+
+              }
+              .checkbox-group {
+                display: flex;
+                text-align: right;
+                line-height:4px;
+
+                #one {
+                  display: flex;
+                  width: 0px;
+                  height: 0px;
+                }
+              }
+              .checkbox-group input {
+                opacity: 0;
+                display: inline-block;
+              }
+              .checkbox-group input[type=checkbox] + label:before, .checkbox-group input[type=radio] + label:before {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                content: '';
+                color: #fff;
+                background:#ffffff;
+              }
+              .checkbox-group input[type=checkbox]:checked + label:before, .checkbox-group input[type=radio]:checked + label:before {
+                content: '\2713';
+                color: #5a9bfd;
+                background-color: #ffffff;
+                font-size: 16px;
+                text-align: center;
+                line-height:20px;
+              }
+            }
+            .topTwo{
+              display:flex;
+              flex:1;
+              justify-content:flex-start;
+                  span{
+                    display: inline-block;
+                    margin-right: 6%;
+
+                  a {
+                    display: inline-block;
+                    flex-wrap: nowrap;
+                    color: #ffffff;
+                    font-size: 12px;
+                    .list-icon {
+                      display: inline-block;
+                      svg {
+                        fill: white;
+                        width: 0.8rem;
+                        height: 0.8rem;
+                        vertical-align: middle;
+                      }
+                    }
+                  }
+               }
+            }
+          }
+          .colorOne{
+            background:#5a9bfd;
+          }
+          .colorTwo{
+            background:#fcc06b;
+          }
+          .colorThree{
+            background:#fe8485;
+          }
+
+          .listDown {
+            display: flex;
+            flex-direction: row;
+            flex:11;
+            /*padding: 4% 4% 5% 5%;*/
+            box-sizing: border-box;
+              .downLeft {
+                display: -webkit-flex; /* Safari */
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                margin:0px;
+                span{
+                  display: -webkit-flex; /* Safari */
+                  display: flex;
+                  flex:1;
+                  width:100%;
+                  font-size: 12px;
+                  color: #888888;
+                  border-bottom:1px solid #f2f4fc;
+                  padding:8% 12%;
+                }
+              }
+              .downRight {
+                display: -webkit-flex; /* Safari */
+                display: flex;
+                flex-direction: column;
+                flex: 2;
+                margin:0px;
+                span{
+                  display: -webkit-flex; /* Safari */
+                  display: flex;
+                  flex:1;
+                  width:100%;
+                  font-size: 12px;
+                  color: #333333;
+                  border-bottom:1px solid #f2f4fc;
+                  padding: 5% 0%;
+                }
+              }
+          }
+        }
+        .borderOne{
+          border-bottom:3px solid #5a9bfd;
+          box-sizing: border-box;
+        }
+        .borderTwo{
+          border-bottom:3px solid #fcc06b;
+          box-sizing: border-box;
+        }
+        .borderThree{
+          border-bottom:3px solid #fe8485;
+          box-sizing: border-box;
+        }
+        }
+    }
+  }
+   .condown_All {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0px;
+    .condown {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      .downLeft {
+        display: flex;
+        flex-direction: row;
+        font-size: 14px;
+        line-height: 40px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #666666;
+        width: 30%;
+
+        .Left_one {
+          display: inline-block;
+          flex: 2;
+          background-color: white;
+          line-height: 40px;
+          text-align: center;
+          padding: 0% 4% 0% 5%;
+          box-sizing: border-box;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -o-text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #666666;
+          -moz-appearance: none;
+          -webkit-appearance: none;
           border-width: 0px;
           outline-color: #ffffff;
           option {
@@ -531,10 +810,194 @@ html{
     }
   }
 }
-footer{
-  flex: 0 0 auto;
-  height: 80px;
-  background-color: #ff855a;
-  font-size: 16px;
-  color: $fontColor;
+/*往来账务情况列表*/
+/*最右边的头部导航栏*/
+.financeSec {
+  width: 100%;
+
+  .finance_topNavs {
+    width: 100%;
+    padding-left: 16%;
+    padding-right: 3%;
+    margin-top: 61px;
+    height: 55px;
+    background: #ffffff;
+    margin-bottom: 30px;
+    .finance_topNav {
+      margin-left: 1%;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        li {
+          display: inline-block;
+          font-size: 16px;
+          line-height: 53px;
+          padding: 0% 2%;
+          a {
+            display: inline-block;
+            font-size: 16px;
+            color: #999999;
+
+          }
+
+        }
+        .finactive {
+          border-bottom: 2px solid #f86463;
+          color: #367bf0;
+        }
+        span {
+          display: inline-block;
+          font-size: 18px;
+          line-height: 55px;
+          color: #333333;
+          margin: 0% 4% 0% 0%;
+          font-family: "Microsoft YaHei";
+        }
+      }
+    }
+  }
+  .finance_List {
+    width: 80%;
+    margin-left: 16%;
+    margin-right: 16%;
+    height: 500px;
+    background: #ffffff;
+    padding-bottom: 10%;
+    .finconNav {
+      flex-direction: column;
+      display: flex;
+      margin-right: 3%;
+      .conNav_top {
+        display: flex;
+        justify-content: space-between;
+        margin-top:1%;
+        .top-nav {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex: 0 0 30em;
+          .current-color {
+            background-color: #5a9bfd;
+            a {
+              color: white;
+              svg {
+                fill: white;
+              }
+            }
+          }
+          li {
+            padding: 5px 13px;
+            background-color: #f1f1f1;
+            margin-right: 3%;
+            svg {
+              width: 1.8rem;
+              height: 1.8rem;
+              fill: #9a9a9a;
+              vertical-align: middle;
+            }
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 14px;
+              color: #999;
+              i {
+                padding-right: 15px;
+              }
+            }
+          }
+        }
+        .search-content {
+          display: flex;
+          background-color: #5a9bfd;
+          border: {
+            bottom: 2px solid #5a9bfd;
+            left: 3px solid #5a9bfd;
+          }
+        ;
+          border-radius: 5px;
+          justify-content: space-between;
+          line-height: 36px;
+          width: 25%;
+          input {
+            width: 80%;
+            padding-left: 10px;
+            line-height: 36px;
+            margin: {
+              top: 2px;
+            }
+          ;
+          }
+          label {
+            text-align: center;
+            width: 20%;
+            color: white;
+          }
+        }
+      }
+    }
+    .finconList{
+      width:400px;
+      height:200px;
+      overflow-x:hidden;
+      overflow-y:auto;
+      background: lightcoral;
+    }
+  }
 }
+/*
+.div{
+  width:100%;
+  height:200px;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+!*兼容IE*!
+.div{
+  scrollbar-face-color: #20a774;!*移动滑块颜色*!
+  scrollbar-shadow-color: #20a774;!*移动滑块边框颜色*!
+  scrollbar-track-color: #ccc;!*背景颜色*!
+  scrollbar-arrow-color: #ddd;!*箭头颜色*!
+}
+.div::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #ccc;
+}!* 滚动条的滑轨背景颜色 *!
+.div::-webkit-scrollbar
+{
+  width: 6px;
+  background-color: #ccc;
+}
+
+.div::-webkit-scrollbar-thumb
+{
+  background-color: #20a774;
+}!* 滑块颜色 *!
+
+*/
+
+
+@media (min-width: 960px) and (max-width: 1550px){
+  .finance_topNavs{
+      margin-left: 16%;
+
+  }
+  .finance_List{
+    margin-left: 26%;
+  }
+}
+@media (max-width: 1024px){
+  .finance_topNavs{
+      margin-left: 18%;
+
+  }
+  .finance_List{
+    margin-left: 40%;
+  }
+}
+
