@@ -2,10 +2,7 @@
 @import "../capital/financeList";
 @import "../capital/drawalLists";
 @import "../material/analyzeLists";
-@import "../material/materialLists";
-@import "../capital/manageList";
-@import "../capital/payAble";
-/*@import "../dividend/list";*/
+@import "materialLists";
 
 
 $bgColor:#fcf;
@@ -1020,7 +1017,3 @@ html{
     margin-left: 40%;
   }
 }
-
-
-
-

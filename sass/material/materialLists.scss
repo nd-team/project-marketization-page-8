@@ -1,32 +1,33 @@
 /*物资入库列表*/
-/*.lists {
-  display: flex;
-  flex-direction: column;
+.material-lists {
+  position: relative;
+  height: 800px;
 
-  .markeList {
-    width: 101%;
+  .material-body {
+    width: 102%;
     height: auto;
     margin-top: 10px;
     display: flex;
     flex-direction: row;
+
     ul {
-      width: 120%;
+      width: 140%;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       li {
         display: inline-flex;
         background: #ffffff;
-        margin: 1%;
-        padding-top: 1%;
+        margin: 1% 2% 1% 0%;
         width: 23%;
         height: 200px;
-        .list {
+        padding-top: 1%;
+        .box {
           display: inline-flex;
           flex-direction: column;
           background: #ffffff;
           width: 100%;
-          .listTop {
+          .box-head {
             display: flex;
             flex-direction: row;
             width: 100%;
@@ -39,7 +40,7 @@
             flex-wrap: nowrap;
             margin-bottom: 4%;
 
-            .Topright {
+            .head-right {
               display: flex;
               flex-direction: row;
               width: 82%;
@@ -89,7 +90,7 @@
               text-align: center;
             }
           }
-          .listDown {
+          .box-bottom {
             display: flex;
             flex-direction: row;
             width: 100%;
@@ -98,7 +99,7 @@
             padding: 0% 5%;
             box-sizing: border-box;
             height: 140px;
-            .listRight {
+            .bottom-left {
               font-size: 14px;
               width: 50%;
               text-align: left;
@@ -109,7 +110,7 @@
                 line-height: 100%;
               }
             }
-            .listLeft {
+            .bottom-right {
               font-size: 14px;
               width: 50%;
               text-align: right;
@@ -126,112 +127,7 @@
         }
       }
     }
+  }
 
-    .condown {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      width: 100%;
-      margin: 20px 0px 50px 0px;
-      padding-left: 1%;
-      padding-right: 4%;
-      height: 40px;
+}
 
-      .downLeft {
-        display: flex;
-        flex-direction: row;
-        font-size: 14px;
-        line-height: 40px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        -o-text-overflow: ellipsis;
-        white-space: nowrap;
-        color: #999999;
-        width: 30%;
-
-        .Left_one {
-          display: inline-block;
-          flex: 2;
-          background-color: white;
-          line-height: 40px;
-          text-align: center;
-          padding: 0% 4% 0% 5%;
-          box-sizing: border-box;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          -o-text-overflow: ellipsis;
-          white-space: nowrap;
-          color: #999999;
-          -moz-appearance: none; !* Firefox *!
-          -webkit-appearance: none; !* Safari 和 Chrome *!
-          border-width: 0px;
-          outline-color: #ffffff;
-          option {
-            border-color: #ffffff;
-          }
-
-        }
-        select::-ms-expand {
-          display: none;
-        }
-        .inactive {
-          background: url(/images/up.png) no-repeat 96% center white;
-
-        }
-        .inactives {
-          background: url(/images/down.png) no-repeat 96% center;
-        }
-        .Left_two {
-          display: inline-block;
-          flex: 8;
-          font-size: 14px;
-          line-height: 40px;
-          margin-left: 1%;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          -o-text-overflow: ellipsis;
-          white-space: nowrap;
-
-        }
-      }
-      .downRight {
-        display: flex;
-        font-size: 14px;
-        line-height: 40px;
-        margin-right: 1%;
-
-        ul {
-          width: 101%;
-          display: flex;
-          flex-direction: row;
-          li {
-            display: inline-block;
-            flex-wrap: nowrap;
-            font-size: 14px;
-            padding: 0px 15px;
-            margin-right: 1%;
-            border-radius: 2px;
-            background-color: white;
-            color: #999999;
-
-          }
-          .li1 {
-            margin-left: 1%;
-            width: 88px;
-            text-align: center;
-          }
-          .li2 {
-            margin-left: 1%;
-            margin-right: 0%;
-            width: 44px;
-            color: #5a9bfd;
-          }
-          .active {
-            background-color: #5a9bfd;
-            color: white;
-          }
-        }
-      }
-    }
-  }*/

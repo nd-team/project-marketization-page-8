@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -150,30 +150,31 @@
             </li>
         </ul>
     </nav>
-    <section class="financeSec">
-        <div class="finance_topNavs">
-            <div class="finance_topNav">
+    <section class="main-module">
+        <div class="major-topic">
+            <div class="topic-nav">
                 <ul>
                     <span>往来账务情况</span>
                     <li>
-                        <a href="#" class="finactive" >项目收入周</a>
+                        <a href="projectWeek.html" >项目收入周</a>
                     </li>
                     <li>
-                        <a href="#">项目收入月</a>
+                        <a href="projectMonth.html"  class="finactive" >项目收入月</a>
                     </li>
                     <li>
-                        <a href="#">地区收入周</a>
+                        <a href="districtWeek.html" >地区收入周</a>
                     </li>
                     <li>
-                        <a href="#">地区收入日</a>
+                        <a href="districtDay.html">地区收入日</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="finance_List">
-            <div class="finconNav">
-                <div class="conNav_top">
-                    <ul class="top-nav">
+    </section>
+    <div class="con-right">
+        <div class="content-box">
+                <div class="right-header">
+                    <ul class="right-nav">
                         <li class="current-color">
                             <a href="javascript:void(0)">
                                 <i class="list-icon">
@@ -200,54 +201,328 @@
                         <li><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
                             <use xlink:href="#delete"></use>
                         </svg></i>删除</a> </li>
+                        <li><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
+                            <use xlink:href="#collect"></use>
+                        </svg></i>汇总</a> </li>
                     </ul>
                     <div class="search-content">
                         <input type="text" placeholder="请输入关键字">
                         <label>搜索</label>
                     </div>
                 </div>
-                <div class="finconList">
+            <div class="right-list">
+                <div class="list-down">
+                    <ul class="down-header">
+                        <li>
+                            <p class="check"></p>
+                            <span>地区</span>
+                            <span>项目</span>
+                            <span>月份</span>
+                            <span>周数</span>
+                            <span>目标任务量</span>
+                            <span>实际完成量</span>
+                            <span>差异</span>
+                            <span>参考单价</span>
+                            <span>目标收入</span>
+                            <span>计划收入</span>
+                            <span>差异</span>
+                        </li>
+                        <li>
+                            <p class="check">
+                                <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                <label class="tick"></label>
+                            </p>
+                            <p>
+                                <span>湛江</span>
+                            </p>
+                            <p>
+                                <span>项目组A</span>
+                            </p>
+                            <p>
+                                <span>一月</span>
+                            </p>
+                            <p>
+                                <span>第一周</span>
+                                <span>第一周</span>
+                                <span>第一周</span>
+                                <span>第一周</span>
+                                <span>第一周</span>
+                                <span>第一周</span>
+                                <span>合计</span>
+                            </p>
+                            <p>
+                                <span>30</span>
+                                <span>20</span>
+                                <span>100</span>
+                                <span>200</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>30</span>
+                            </p>
+                            <p>
+                                <span>30</span>
+                                <span>20</span>
+                                <span>100</span>
+                                <span>200</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>30</span>
+                            </p>
+                            <p  class="red_color">
+                                <span>30</span>
+                                <span>20</span>
+                                <span>100</span>
+                                <span>200</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>30</span>
+                            </p>
 
+                            <p>
+                                <span>30</span>
+                                <span>20</span>
+                                <span>100</span>
+                                <span>200</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>30</span>
+                            </p>
+                            <p>
+                                <span>30</span>
+                                <span>20</span>
+                                <span>100</span>
+                                <span>200</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>30</span>
+                            </p>
+                            <p>
+                                <span>30</span>
+                                <span>20</span>
+                                <span>100</span>
+                                <span>200</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>30</span>
+                            </p>
+                            <p class="red_color">
+                                <span>30</span>
+                                <span>20</span>
+                                <span>100</span>
+                                <span>200</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>30</span>
+                            </p >
+
+                        </li>
+                        <li>
+                            <p class="check">
+                                <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                <label class="tick"></label>
+                            </p>
+                            <p>
+                                <span>湛江</span>
+                            </p>
+                            <p>
+                                <span>项目组A</span>
+                            </p>
+                            <p>
+                                <span>一月</span>
+                            </p>
+                            <p>
+                                <span>第一周</span>
+                                <span>第一周</span>
+                                <span>第一周</span>
+                                <span>第一周</span>
+                                <span>第一周</span>
+                                <span>第一周</span>
+                                <span>合计</span>
+                            </p>
+                            <p>
+                                <span>30</span>
+                                <span>20</span>
+                                <span>100</span>
+                                <span>200</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>30</span>
+                            </p>
+                            <p>
+                                <span>30</span>
+                                <span>20</span>
+                                <span>100</span>
+                                <span>200</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>30</span>
+                            </p>
+                            <p class="red_color">
+                                <span>30</span>
+                                <span>20</span>
+                                <span>100</span>
+                                <span>200</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>30</span>
+                            </p>
+
+                            <p>
+                                <span>30</span>
+                                <span>20</span>
+                                <span>100</span>
+                                <span>200</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>30</span>
+                            </p>
+                            <p>
+                                <span>30</span>
+                                <span>20</span>
+                                <span>100</span>
+                                <span>200</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>30</span>
+                            </p>
+                            <p>
+                                <span>30</span>
+                                <span>20</span>
+                                <span>100</span>
+                                <span>200</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>30</span>
+                            </p>
+                            <p class="red_color">
+                                <span>30</span>
+                                <span>20</span>
+                                <span>100</span>
+                                <span>200</span>
+                                <span>30</span>
+                                <span>40</span>
+                                <span>30</span>
+                            </p>
+                        <li>
+                        <p class="check">
+                            <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                            <label class="tick"></label>
+                        </p>
+                        <p>
+                            <span>湛江</span>
+                        </p>
+                        <p>
+                            <span>项目组A</span>
+                        </p>
+                        <p>
+                            <span>一月</span>
+                        </p>
+                        <p>
+                            <span>第一周</span>
+                            <span>第一周</span>
+                            <span>第一周</span>
+                            <span>第一周</span>
+                            <span>第一周</span>
+                            <span>第一周</span>
+                            <span>合计</span>
+                        </p>
+                        <p>
+                            <span>30</span>
+                            <span>20</span>
+                            <span>100</span>
+                            <span>200</span>
+                            <span>30</span>
+                            <span>40</span>
+                            <span>30</span>
+                        </p>
+                        <p>
+                            <span>30</span>
+                            <span>20</span>
+                            <span>100</span>
+                            <span>200</span>
+                            <span>30</span>
+                            <span>40</span>
+                            <span>30</span>
+                        </p>
+                        <p>
+                            <span>30</span>
+                            <span>20</span>
+                            <span>100</span>
+                            <span>200</span>
+                            <span>30</span>
+                            <span>40</span>
+                            <span>30</span>
+                        </p>
+
+                        <p>
+                            <span>30</span>
+                            <span>20</span>
+                            <span>100</span>
+                            <span>200</span>
+                            <span>30</span>
+                            <span>40</span>
+                            <span>30</span>
+                        </p>
+                        <p>
+                            <span>30</span>
+                            <span>20</span>
+                            <span>100</span>
+                            <span>200</span>
+                            <span>30</span>
+                            <span>40</span>
+                            <span>30</span>
+                        </p>
+                        <p>
+                            <span>30</span>
+                            <span>20</span>
+                            <span>100</span>
+                            <span>200</span>
+                            <span>30</span>
+                            <span>40</span>
+                            <span>30</span>
+                        </p>
+                        <p>
+                            <span>30</span>
+                            <span>20</span>
+                            <span>100</span>
+                            <span>200</span>
+                            <span>30</span>
+                            <span>40</span>
+                            <span>30</span>
+                        </p>
+
+                    </li>
+                     </ul>
+                </div>
+            </div>
+            <div class="right-paging">
+                <div class="paging-box">
+                    <div class="paging-left">
+                        <select class="left-one inactive">
+                            <option>显示10项</option>
+                            <option>显示20项</option>
+                            <option>显示30项</option>
+                        </select>
+                        <p class="left-two">当前显示1到10项，共20页</p>
+                    </div>
+                    <div class="paging-right">
+                        <ul>
+                            <li><</li>
+                            <li  class="active">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>></li>
+                            <li class="li-one">到1页</li>
+                            <li class="li-two">确定</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!--<div class="content-right">
-        <div class="right-header">
-            <ul class="right-nav">
-                <li class="current-color">
-                    <a href="javascript:void(0)">
-                        <i class="list-icon">
-                            <svg role="img" class="list">
-                                <use xlink:href="#list"></use>
-                            </svg>
-                        </i>
-                        列表
-                    </a>
-                </li>
-                <li><a href="javascript:void(0)">
-                    <i class="list-icon">
-                        <svg role="img" class="add">
-                            <use xlink:href="#add"></use>
-                        </svg>
-                    </i>    添加
-                </a>
-                </li>
-                <li><a href="javascript:void(0)"><i class="list-icon">
-                    <svg role="img" class="edit">
-                        <use xlink:href="#edit"></use>
-                    </svg>
-                </i>编辑</a> </li>
-                <li><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
-                    <use xlink:href="#delete"></use>
-                </svg></i>删除</a> </li>
-            </ul>
-            <div class="search-content">
-                <input type="text" placeholder="请输入关键字">
-                <label>搜索</label>
-            </div>
-        </div>-->
+    </div>
         <!--物质入库列表-->
         <!--        <div class="lists">
                     <div class="markeList">
@@ -1992,9 +2267,9 @@
         </div>-->
         <!--往来财务情况列表-->
 
-
-    </div>
 </div>
+
+
 
 
 <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>
