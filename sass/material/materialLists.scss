@@ -1,0 +1,133 @@
+/*物资入库列表*/
+.material-lists {
+  position: relative;
+  height: 800px;
+
+  .material-body {
+    width: 102%;
+    height: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+
+    ul {
+      width: 140%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      li {
+        display: inline-flex;
+        background: #ffffff;
+        margin: 1% 2% 1% 0%;
+        width: 23%;
+        height: 200px;
+        padding-top: 1%;
+        .box {
+          display: inline-flex;
+          flex-direction: column;
+          background: #ffffff;
+          width: 100%;
+          .box-head {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            font-size: 10%;
+            color: #5a9bfd;
+            border-bottom: 1px solid #999999;
+            padding-left: 5%;
+            box-sizing: border-box;
+            height: 38px;
+            flex-wrap: nowrap;
+            margin-bottom: 4%;
+
+            .head-right {
+              display: flex;
+              flex-direction: row;
+              width: 82%;
+              span {
+                display: inline-block;
+                font-size: 1rem;
+                margin-right: 10%;
+
+              }
+              i {
+                font-style: normal;
+                font-size: 0.5rem;
+                color: #999999;
+                font-family: "MicrosoftYaHei";
+                line-height: 25px;
+                text-align: left;
+              }
+
+            }
+            .checkbox-group {
+              width: 17%;
+              text-align: center;
+              #one {
+                width: 1px;
+                height: 1px;
+              }
+            }
+            .checkbox-group input {
+              opacity: 0;
+              display: inline-block;
+            }
+            .checkbox-group input[type=checkbox] + label:before, .checkbox-group input[type=radio] + label:before {
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              content: '';
+              color: #fff;
+              border: 1px solid #5a9bfd;
+              border-radius: 2px;
+            }
+            .checkbox-group input[type=checkbox]:checked + label:before, .checkbox-group input[type=radio]:checked + label:before {
+              content: '\2713';
+              color: #fff;
+              background-color: #5a9bfd;
+              border-radius: 2px;
+              font-size: 16px;
+              text-align: center;
+            }
+          }
+          .box-bottom {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            font-size: 10%;
+            color: #999999;
+            padding: 0% 5%;
+            box-sizing: border-box;
+            height: 140px;
+            .bottom-left {
+              font-size: 14px;
+              width: 50%;
+              text-align: left;
+              display: flex;
+              flex-direction: column;
+              p {
+                flex: 1;
+                line-height: 100%;
+              }
+            }
+            .bottom-right {
+              font-size: 14px;
+              width: 50%;
+              text-align: right;
+              display: flex;
+              flex-direction: column;
+              p {
+                flex: 1;
+                line-height: 100%;
+                color: #333333;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}
+

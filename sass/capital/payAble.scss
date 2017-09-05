@@ -1,0 +1,353 @@
+@import "../base";
+@import "../capital/manageList";
+/*应交税金*/
+.con-right {
+  margin-top: 10px;
+  width: 100%;
+  padding-left: 254px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  .share {
+    background-color: white;
+    border-radius: 3px;
+    margin-top: 22px;
+    padding: {
+      bottom: 40px;
+    }
+  ;
+    .input-list {
+      display: flex;
+      flex-wrap: wrap;
+      padding: {
+        left: 4%;
+      }
+    ;
+      li {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 25%;
+        position: relative;
+        .drop-down {
+          background: url(/images/inputdown.png) no-repeat right 10px center;
+        }
+        .drop-date {
+          background: url(/images/time.png) no-repeat right 10px center;
+        }
+        label {
+          font-size: 14px;
+          margin: {
+            top: 27px;
+            bottom: 15px;
+          }
+        ;
+          i {
+            color: red;
+          }
+        }
+        input {
+          @include select-input;
+          text-indent: 1.5em;
+          &:hover {
+            box-shadow: 0 0 3px #5a9bfd;
+          }
+        }
+        select {
+          @include select-input;
+          &:hover {
+            box-shadow: 0 0 3px #5a9bfd;
+          }
+          padding-left: 4%;
+        }
+        .input-dom {
+          position: absolute;
+          width: 65%;
+          top: 60%;
+          left: 0.3%;
+          border: 0;
+          &:hover {
+            box-shadow: 0 0 3px white;
+          }
+        }
+      }
+    }
+    .input-bottom {
+      display: flex;
+      justify-content: flex-end;
+      margin: {
+        top: 40px;
+      }
+    ;
+      padding: {
+        top: 30px;
+      }
+    ;
+      border-top: 1px solid #e4e4e4;
+      button {
+        width: 98px;
+        border-radius: 2px;
+        line-height: 36px;
+        cursor: pointer;
+        &.cancel {
+          color: #999999;
+          border: 1px solid #e4e4e4;
+          background-color: white;
+          margin-right: 16px;
+        }
+        &.sure {
+          color: white;
+          background-color: #5a9bfd;
+          margin-right: 5%;
+        }
+      }
+    }
+  }
+  /*公司汇总*/
+  .company {
+    background-color: white;
+    border-radius: 3px;
+    margin-top: 22px;
+    padding: {
+      bottom: 40px;
+    }
+  ;
+    .input-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      padding: {
+        left: 4%;
+      }
+    ;
+      li {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 25%;
+        position: relative;
+        .drop-down {
+          background: url(/images/inputdown.png) no-repeat right 10px center;
+        }
+        .drop-date {
+          background: url(/images/time.png) no-repeat right 10px center;
+        }
+        label {
+          font-size: 14px;
+          margin: {
+            top: 27px;
+            bottom: 15px;
+          }
+        ;
+          i {
+            color: red;
+          }
+        }
+        input {
+          @include select-input;
+          text-indent: 1.5em;
+          &:hover {
+            box-shadow: 0 0 3px #5a9bfd;
+          }
+        }
+        select {
+          @include select-input;
+          &:hover {
+            box-shadow: 0 0 3px #5a9bfd;
+          }
+          padding-left: 4%;
+        }
+        .input-dom {
+          position: absolute;
+          height: 36px;
+          width: 65%;
+          top: 59.9%;
+          left: 1.3%;
+          border: 0;
+          &:hover {
+            box-shadow: 0 0 3px white;
+          }
+        }
+      }
+      .list-btn {
+        display: flex;
+        flex: 0 0 8%;
+        button {
+          width: 100px;
+          height: 40px;
+          margin-top: 55%;
+          background: #5a9bfd;
+          border-radius: 2px;
+          color: #ffffff;
+
+        }
+      }
+    }
+    .input-table {
+      margin-top: 30px;
+      height: 84px;
+      padding: {
+        left: 4%;
+        right: 4%;
+      }
+    ;
+      .table-body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        li {
+          display: inline-flex;
+          display: -webkit-inline-flex;
+          flex-direction: row;
+          flex: 1;
+          line-height: 40px;
+          height: 40px;
+          font-size: 14px;
+          span {
+            display: inline-block;
+            flex: 1;
+            text-align: center;
+            border-right: 1px solid #5a9bfd;
+
+          }
+        }
+        .body-head {
+          background: #c3dafd;
+          border: 1px solid #5a9bfd;
+          border-right: none;
+          border-bottom: none;
+          color: #5a9bfd;
+
+        }
+        .body-body {
+          border: 1px solid #5a9bfd;
+          border-right: none;
+        }
+      }
+
+    }
+  }
+
+  /*税种汇总*/
+  .type {
+    background-color: white;
+    border-radius: 3px;
+    margin-top: 22px;
+    padding: {
+      bottom: 40px;
+    }
+  ;
+    .input-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      padding: {
+        left: 4%;
+      }
+    ;
+      li {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 25%;
+        position: relative;
+        .drop-down {
+          background: url(/images/inputdown.png) no-repeat right 10px center;
+        }
+        .drop-date {
+          background: url(/images/time.png) no-repeat right 10px center;
+        }
+        label {
+          font-size: 14px;
+          margin: {
+            top: 27px;
+            bottom: 15px;
+          }
+        ;
+          i {
+            color: red;
+          }
+        }
+        input {
+          @include select-input;
+          text-indent: 1.5em;
+          &:hover {
+            box-shadow: 0 0 3px #5a9bfd;
+          }
+        }
+        select {
+          @include select-input;
+          &:hover {
+            box-shadow: 0 0 3px #5a9bfd;
+          }
+          padding-left: 4%;
+        }
+        .input-dom {
+          position: absolute;
+          height: 36px;
+          width: 65%;
+          top: 59.9%;
+          left: 1.3%;
+          border: 0;
+          &:hover {
+            box-shadow: 0 0 3px white;
+          }
+        }
+      }
+      .list-btn {
+        display: flex;
+        flex: 0 0 8%;
+        button {
+          width: 100px;
+          height: 40px;
+          margin-top: 55%;
+          background: #5a9bfd;
+          border-radius: 2px;
+          color: #ffffff;
+
+        }
+      }
+    }
+    .input-table {
+      margin-top: 30px;
+      height: 84px;
+      padding: {
+        left: 4%;
+        right: 4%;
+      }
+    ;
+      .table-body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        li {
+          display: inline-flex;
+          display: -webkit-inline-flex;
+          flex-direction: row;
+          flex: 1;
+          line-height: 40px;
+          height: 40px;
+          font-size: 14px;
+          span {
+            display: inline-block;
+            flex: 1;
+            text-align: center;
+            border-right: 1px solid #5a9bfd;
+
+          }
+        }
+        .body-head {
+          background: #c3dafd;
+          border: 1px solid #5a9bfd;
+          border-right: none;
+          border-bottom: none;
+          color: #5a9bfd;
+
+        }
+        .body-body {
+          border: 1px solid #5a9bfd;
+          border-right: none;
+        }
+      }
+
+    }
+  }
+}
