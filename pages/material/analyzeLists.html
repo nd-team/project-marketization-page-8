@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta name="keywords" content="项目市场化">
     <meta name="description" content="项目市场化">
-    <link rel="stylesheet" href="/css/material/index.css">
+    <link rel="stylesheet" href="/css/material/department.css">
 </head>
 <body>
 <header>
@@ -151,42 +151,40 @@
         </ul>
     </nav>
     <div class="content-right">
-        <div class="content-box">
-            <div class="right-header">
-                <ul class="right-nav">
-                    <li class="current-color">
-                        <a href="javascript:void(0)">
-                            <i class="list-icon">
-                                <svg role="img" class="list">
-                                    <use xlink:href="#list"></use>
-                                </svg>
-                            </i>
-                            列表
-                        </a>
-                    </li>
-                    <li><a href="javascript:void(0)">
+        <div class="right-header">
+            <ul class="right-nav">
+                <li class="current-color" data-title="analyze-lists">
+                    <a href="javascript:void(0)">
+                        <i class="list-icon">
+                            <svg role="img" class="list">
+                                <use xlink:href="#list"></use>
+                            </svg>
+                        </i>
+                        列表
+                    </a>
+                </li>
+                <li data-title="add">
+                    <a href="javascript:void(0)">
                         <i class="list-icon">
                             <svg role="img" class="add">
                                 <use xlink:href="#add"></use>
                             </svg>
                         </i>    添加
-                    </a>
-                    </li>
-                    <li><a href="javascript:void(0)"><i class="list-icon">
-                        <svg role="img" class="edit">
-                            <use xlink:href="#edit"></use>
-                        </svg>
-                    </i>编辑</a> </li>
-                    <li><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
-                        <use xlink:href="#delete"></use>
-                    </svg></i>删除</a> </li>
-                </ul>
-                <div class="search-content">
-                    <input type="text" placeholder="请输入关键字">
-                    <label>搜索</label>
-                </div>
-            </div>
-            <!--物资分析列表-->
+                    </a></li>
+                <li><a href="javascript:void(0)"><i class="list-icon">
+                    <svg role="img" class="edit">
+                        <use xlink:href="#edit"></use>
+                    </svg>
+                </i>编辑</a> </li>
+                <li data-title="delete"><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
+                    <use xlink:href="#delete"></use>
+                </svg></i>删除</a> </li>
+            </ul>
+
+        </div>
+            <!--物资分析-->
+        <div class="content-body">
+            <!--列表-->
             <div class="analyze-lists">
                 <div class="analyze-body">
                     <ul>
@@ -195,10 +193,10 @@
                                 <div class="box">
                                     <h1 class="box-head">
                                         <span>项目组/部门</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
-                                        </div>
+                                        <p class="check-one">
+                                            <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                            <label class="tick"></label>
+                                        </p>
                                     </h1>
                                     <div class="box-body">
                                         <p>
@@ -206,7 +204,7 @@
                                              <i>地区：</i>
                                              <i>广州</i>
                                          </span>
-                                            <span class="type">
+                                            <span class="form">
                                              <i>类型:</i>
                                              <i>通信</i>
                                          </span>
@@ -264,10 +262,10 @@
                                 <div class="box">
                                     <h1 class="box-head">
                                         <span>项目组/部门</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
-                                        </div>
+                                        <p class="check-one">
+                                            <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                            <label class="tick"></label>
+                                        </p>
                                     </h1>
                                     <div class="box-body">
                                         <p>
@@ -275,7 +273,7 @@
                                              <i>地区：</i>
                                              <i>广州</i>
                                          </span>
-                                            <span class="type">
+                                            <span class="form">
                                              <i>类型:</i>
                                              <i>通信</i>
                                          </span>
@@ -333,10 +331,10 @@
                                 <div class="box">
                                     <h1 class="box-head">
                                         <span>项目组/部门</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
-                                        </div>
+                                        <p class="check-one">
+                                            <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                            <label class="tick"></label>
+                                        </p>
                                     </h1>
                                     <div class="box-body">
                                         <p>
@@ -344,7 +342,7 @@
                                              <i>地区：</i>
                                              <i>广州</i>
                                          </span>
-                                            <span class="type">
+                                            <span class="form">
                                              <i>类型:</i>
                                              <i>通信</i>
                                          </span>
@@ -402,10 +400,10 @@
                                 <div class="box">
                                     <h1 class="box-head">
                                         <span>项目组/部门</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
-                                        </div>
+                                        <p class="check-one">
+                                            <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                            <label class="tick"></label>
+                                        </p>
                                     </h1>
                                     <div class="box-body">
                                         <p>
@@ -413,7 +411,7 @@
                                              <i>地区：</i>
                                              <i>广州</i>
                                          </span>
-                                            <span class="type">
+                                            <span class="form">
                                              <i>类型:</i>
                                              <i>通信</i>
                                          </span>
@@ -471,10 +469,10 @@
                                 <div class="box">
                                     <h1 class="box-head">
                                         <span>项目组/部门</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
-                                        </div>
+                                        <p class="check-one">
+                                            <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                            <label class="tick"></label>
+                                        </p>
                                     </h1>
                                     <div class="box-body">
                                         <p>
@@ -482,7 +480,7 @@
                                              <i>地区：</i>
                                              <i>广州</i>
                                          </span>
-                                            <span class="type">
+                                            <span class="form">
                                              <i>类型:</i>
                                              <i>通信</i>
                                          </span>
@@ -540,10 +538,10 @@
                                 <div class="box">
                                     <h1 class="box-head">
                                         <span>项目组/部门</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
-                                        </div>
+                                        <p class="check-one">
+                                            <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                            <label class="tick"></label>
+                                        </p>
                                     </h1>
                                     <div class="box-body">
                                         <p>
@@ -551,7 +549,7 @@
                                              <i>地区：</i>
                                              <i>广州</i>
                                          </span>
-                                            <span class="type">
+                                            <span class="form">
                                              <i>类型:</i>
                                              <i>通信</i>
                                          </span>
@@ -609,10 +607,10 @@
                                 <div class="box">
                                     <h1 class="box-head">
                                         <span>项目组/部门</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
-                                        </div>
+                                        <p class="check-one">
+                                            <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                            <label class="tick"></label>
+                                        </p>
                                     </h1>
                                     <div class="box-body">
                                         <p>
@@ -620,7 +618,7 @@
                                              <i>地区：</i>
                                              <i>广州</i>
                                          </span>
-                                            <span class="type">
+                                            <span class="form">
                                              <i>类型:</i>
                                              <i>通信</i>
                                          </span>
@@ -678,10 +676,10 @@
                                 <div class="box">
                                     <h1 class="box-head">
                                         <span>项目组/部门</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
-                                        </div>
+                                        <p class="check-one">
+                                            <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                            <label class="tick"></label>
+                                        </p>
                                     </h1>
                                     <div class="box-body">
                                         <p>
@@ -689,7 +687,7 @@
                                              <i>地区：</i>
                                              <i>广州</i>
                                          </span>
-                                            <span class="type">
+                                            <span class="form">
                                              <i>类型:</i>
                                              <i>通信</i>
                                          </span>
@@ -747,10 +745,10 @@
                                 <div class="box">
                                     <h1 class="box-head">
                                         <span>项目组/部门</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
-                                        </div>
+                                        <p class="check-one">
+                                            <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                            <label class="tick"></label>
+                                        </p>
                                     </h1>
                                     <div class="box-body">
                                         <p>
@@ -758,7 +756,7 @@
                                              <i>地区：</i>
                                              <i>广州</i>
                                          </span>
-                                            <span class="type">
+                                            <span class="form">
                                              <i>类型:</i>
                                              <i>通信</i>
                                          </span>
@@ -816,10 +814,10 @@
                                 <div class="box">
                                     <h1 class="box-head">
                                         <span>项目组/部门</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
-                                        </div>
+                                        <p class="check-one">
+                                            <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                            <label class="tick"></label>
+                                        </p>
                                     </h1>
                                     <div class="box-body">
                                         <p>
@@ -827,7 +825,7 @@
                                              <i>地区：</i>
                                              <i>广州</i>
                                          </span>
-                                            <span class="type">
+                                            <span class="form">
                                              <i>类型:</i>
                                              <i>通信</i>
                                          </span>
@@ -885,10 +883,10 @@
                                 <div class="box">
                                     <h1 class="box-head">
                                         <span>项目组/部门</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
-                                        </div>
+                                        <p class="check-one">
+                                            <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                            <label class="tick"></label>
+                                        </p>
                                     </h1>
                                     <div class="box-body">
                                         <p>
@@ -896,7 +894,7 @@
                                              <i>地区：</i>
                                              <i>广州</i>
                                          </span>
-                                            <span class="type">
+                                            <span class="form">
                                              <i>类型:</i>
                                              <i>通信</i>
                                          </span>
@@ -954,10 +952,10 @@
                                 <div class="box">
                                     <h1 class="box-head">
                                         <span>项目组/部门</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
-                                        </div>
+                                        <p class="check-one">
+                                            <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                            <label class="tick"></label>
+                                        </p>
                                     </h1>
                                     <div class="box-body">
                                         <p>
@@ -965,7 +963,7 @@
                                              <i>地区：</i>
                                              <i>广州</i>
                                          </span>
-                                            <span class="type">
+                                            <span class="form">
                                              <i>类型:</i>
                                              <i>通信</i>
                                          </span>
@@ -1023,11 +1021,7 @@
                 <div class="right-paging">
                     <div class="paging-box">
                         <div class="paging-left">
-                            <select class="left-one inactive">
-                                <option>显示10项</option>
-                                <option>显示20项</option>
-                                <option>显示30项</option>
-                            </select>
+                            <p class="left-one inactive">显示10项</p>
                             <p class="left-two">当前显示1到10项，共20页</p>
                         </div>
                         <div class="paging-right">
@@ -1046,10 +1040,94 @@
                     </div>
                 </div>
             </div>
+            <!--添加-->
+            <div class="add">
+                <ul class="input-list">
+                    <li>
+                        <label>地区<i>*</i></label>
+                        <select class="drop-down">
+                            <option value="" disabled>请选择</option>
+                            <option value="北京">北京</option>
+                            <option value="上海">上海</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>项目组<i>*</i></label>
+                        <select class="drop-down">
+                            <option value="" disabled>请选择</option>
+                            <option value="北京">北京</option>
+                            <option value="上海">上海</option>
+                        </select>
+                        <input type="text" value="我是可手填的下拉框" class="input-dom">
+                    </li>
+                    <li>
+                        <label>物品名称<i>*</i></label>
+                        <input type="text" class="drop-down">
+                    </li>
+                    <li>
+                        <label>单位<i>*</i></label>
+                        <input type="text" class="drop-down">
+                    </li>
+                    <li>
+                        <label>领用人<i>*</i></label>
+                        <select class="drop-down">
+                            <option value="" disabled>请选择</option>
+                            <option value="北京">北京</option>
+                            <option value="上海">上海</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>领用日期<i>*</i></label>
+                        <input type="text" class="drop-date">
+                    </li>
+                    <li>
+                        <label>用途<i>*</i></label>
+                        <select class="drop-down">
+                            <option value="" disabled>请选择</option>
+                            <option value="北京">北京</option>
+                            <option value="上海">上海</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>审核人<i>*</i></label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>备注<i>*</i></label>
+                        <input type="text">
+                    </li>
+                    <li>
+                        <label>领用编号<i>*</i></label>
+                        <select class="drop-down">
+                            <option value="" disabled>请选择</option>
+                            <option value="北京">北京</option>
+                            <option value="上海">上海</option>
+                        </select>
+                    </li>
+                </ul>
+                <p class="input-bottom">
+                    <button class="cancel">取消</button>
+                    <button class="sure">确定</button>
+                </p>
+            </div>
+            <!--删除-->
+            <div class="delete">
+                <div class="del-head">
+                    <span>温馨提示</span>
+                    <small><img src="/images/delete.png"></small>
+                </div>
+                <div class="del-con">
+                    <p>您确定删除这条数据吗？</p>
+                    <p class="btn">
+                        <button>确定</button>
+                        <button>取消</button>
+                    </p>
+                </div>
+            </div>
         </div>
-
+       </div>
     </div>
-</div>
+
 
 
 <script type="text/javascript" src="/js/jquery-2.1.1.min.js"></script>

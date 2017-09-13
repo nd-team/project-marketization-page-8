@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta name="keywords" content="项目市场化">
     <meta name="description" content="项目市场化">
-    <link rel="stylesheet" href="/css/material/index.css">
+    <link rel="stylesheet" href="/css/material/department.css">
 </head>
 <body>
 <header>
@@ -43,6 +43,27 @@
         </p>
     </div>
 </header>
+<section class="main-module">
+    <div class="major-topic">
+        <div class="topic-nav">
+            <ul>
+                <span>往来账务情况</span>
+                <li>
+                    <a href="projectWeek.html" >项目收入周</a>
+                </li>
+                <li>
+                    <a href="projectMonth.html"  class="finactive" >项目收入月</a>
+                </li>
+                <li>
+                    <a href="districtWeek.html" >地区收入周</a>
+                </li>
+                <li>
+                    <a href="districtDay.html">地区收入日</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 <div class="content">
     <nav>
         <ul class="list">
@@ -150,66 +171,45 @@
             </li>
         </ul>
     </nav>
-    <section class="main-module">
-        <div class="major-topic">
-            <div class="topic-nav">
-                <ul>
-                    <span>往来账务情况</span>
-                    <li>
-                        <a href="projectWeek.html" >项目收入周</a>
-                    </li>
-                    <li>
-                        <a href="projectMonth.html"  class="finactive" >项目收入月</a>
-                    </li>
-                    <li>
-                        <a href="districtWeek.html" >地区收入周</a>
-                    </li>
-                    <li>
-                        <a href="districtDay.html">地区收入日</a>
-                    </li>
-                </ul>
+    <div class="content-right content-other">
+        <div class="right-header">
+            <ul class="right-nav">
+                <li class="current-color" data-title="right-list">
+                    <a href="javascript:void(0)">
+                        <i class="list-icon">
+                            <svg role="img" class="list">
+                                <use xlink:href="#list"></use>
+                            </svg>
+                        </i>
+                        列表
+                    </a>
+                </li>
+                <li data-title="listsadd">
+                    <a href="javascript:void(0)">
+                        <i class="list-icon">
+                            <svg role="img" class="add">
+                                <use xlink:href="#add"></use>
+                            </svg>
+                        </i>    添加
+                    </a></li>
+                <li><a href="javascript:void(0)"><i class="list-icon">
+                    <svg role="img" class="edit">
+                        <use xlink:href="#edit"></use>
+                    </svg>
+                </i>编辑</a> </li>
+                <li data-title="delete"><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
+                    <use xlink:href="#delete"></use>
+                </svg></i>删除</a> </li>
+                <li data-title="summary"><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="summary">
+                    <use xlink:href="#summary"></use>
+                </svg></i>汇总</a> </li>
+            </ul>
+            <div class="search-content">
+                <input type="text" placeholder="请输入关键字">
+                <label>搜索</label>
             </div>
         </div>
-    </section>
-    <div class="con-right">
-        <div class="content-box">
-                <div class="right-header">
-                    <ul class="right-nav">
-                        <li class="current-color">
-                            <a href="javascript:void(0)">
-                                <i class="list-icon">
-                                    <svg role="img" class="list">
-                                        <use xlink:href="#list"></use>
-                                    </svg>
-                                </i>
-                                列表
-                            </a>
-                        </li>
-                        <li><a href="javascript:void(0)">
-                            <i class="list-icon">
-                                <svg role="img" class="add">
-                                    <use xlink:href="#add"></use>
-                                </svg>
-                            </i>    添加
-                        </a>
-                        </li>
-                        <li><a href="javascript:void(0)"><i class="list-icon">
-                            <svg role="img" class="edit">
-                                <use xlink:href="#edit"></use>
-                            </svg>
-                        </i>编辑</a> </li>
-                        <li><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
-                            <use xlink:href="#delete"></use>
-                        </svg></i>删除</a> </li>
-                        <li><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
-                            <use xlink:href="#collect"></use>
-                        </svg></i>汇总</a> </li>
-                    </ul>
-                    <div class="search-content">
-                        <input type="text" placeholder="请输入关键字">
-                        <label>搜索</label>
-                    </div>
-                </div>
+        <div class="content-body">
             <div class="right-list">
                 <div class="list-down">
                     <ul class="down-header">
@@ -494,31 +494,28 @@
                     </li>
                      </ul>
                 </div>
-            </div>
-            <div class="right-paging">
-                <div class="paging-box">
-                    <div class="paging-left">
-                        <select class="left-one inactive">
-                            <option>显示10项</option>
-                            <option>显示20项</option>
-                            <option>显示30项</option>
-                        </select>
-                        <p class="left-two">当前显示1到10项，共20页</p>
+                <div class="right-paging">
+                    <div class="paging-box">
+                        <div class="paging-left">
+                            <p class="left-one inactive">显示10项</p>
+                            <p class="left-two">当前显示1到10项，共20页</p>
+                        </div>
+                        <div class="paging-right">
+                            <ul>
+                                <li><</li>
+                                <li  class="active">1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>></li>
+                                <li class="li-one">到1页</li>
+                                <li class="li-two">确定</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="paging-right">
-                        <ul>
-                            <li><</li>
-                            <li  class="active">1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
-                            <li>></li>
-                            <li class="li-one">到1页</li>
-                            <li class="li-two">确定</li>
-                        </ul>
-                    </div>
-                </div>
+                 </div>
+
             </div>
         </div>
 

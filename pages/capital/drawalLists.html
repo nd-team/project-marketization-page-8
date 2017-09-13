@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta name="keywords" content="项目市场化">
     <meta name="description" content="项目市场化">
-    <link rel="stylesheet" href="/css/material/index.css">
+    <link rel="stylesheet" href="/css/material/department.css">
 </head>
 <body>
 <header>
@@ -154,7 +154,7 @@
         <div class="content-box">
             <div class="right-header">
                 <ul class="right-nav">
-                    <li class="current-color">
+                    <li class="current-color" data-title="drawal-lists">
                         <a href="javascript:void(0)">
                             <i class="list-icon">
                                 <svg role="img" class="list">
@@ -164,31 +164,38 @@
                             列表
                         </a>
                     </li>
-                    <li><a href="javascript:void(0)">
-                        <i class="list-icon">
-                            <svg role="img" class="add">
-                                <use xlink:href="#add"></use>
-                            </svg>
-                        </i>    添加
-                    </a>
-                    </li>
+                    <li data-title="add">
+                        <a href="javascript:void(0)">
+                            <i class="list-icon">
+                                <svg role="img" class="add">
+                                    <use xlink:href="#add"></use>
+                                </svg>
+                            </i>    添加
+                        </a></li>
                     <li><a href="javascript:void(0)"><i class="list-icon">
                         <svg role="img" class="edit">
                             <use xlink:href="#edit"></use>
                         </svg>
                     </i>编辑</a> </li>
-                    <li><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
+                    <li data-title="delete"><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
                         <use xlink:href="#delete"></use>
                     </svg></i>删除</a> </li>
-                    <li><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
-                        <use xlink:href="#collect"></use>
-                    </svg></i>地区汇总</a> </li>
-                    <li><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
-                        <use xlink:href="#collect"></use>
-                    </svg></i>项目组汇总</a> </li>
-                    <li><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
-                        <use xlink:href="#collect"></use>
-                    </svg></i>项目组名称汇总</a> </li>
+                    <li data-title="complete"><a href="javascript:void(0)"><i class="list-icon">
+                        <svg role="img" class="delete">
+                            <use xlink:href="#collect"></use>
+                        </svg></i>地区汇总</a> </li>
+                    <li data-title="complete"><a href="javascript:void(0)"><i class="list-icon">
+                        <svg role="img" class="complete">
+                            <use xlink:href="#collect"></use>
+                        </svg></i>项目组汇总</a> </li>
+                    <li data-title="complete"><a href="javascript:void(0)"><i class="list-icon">
+                        <svg role="img" class="complete">
+                            <use xlink:href="#collect"></use>
+                        </svg></i>类别汇总</a> </li>
+                    <li data-title="complete"><a href="javascript:void(0)"><i class="list-icon">
+                        <svg role="img" class="complete">
+                            <use xlink:href="#collect"></use>
+                        </svg></i>项目名称汇总</a> </li>
                 </ul>
                 <div class="search-content">
                     <input type="text" placeholder="请输入关键字">
@@ -196,508 +203,591 @@
                 </div>
             </div>
             <!--资金回笼-->
-            <div class="drawal-lists">
-                <div class="drawal-list">
-                    <ul>
-                        <li>
-                            <div class="box border-one">
-                                <!--列表上部-->
-                                <div class="box-head  color-one">
-                                    <h1 class="head-one">
-                                        <span>项目名称</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
-                                        </div>
-                                    </h1>
-                                    <div class="head-two">
-                                    <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            广州
-                                            </a>
-                                    </span>
+            <div class="content-body">
+                    <!--列表-->
+                <div class="drawal-lists">
+                    <div class="drawal-list">
+                        <ul>
+                            <li>
+                                <div class="box border-one">
+                                    <!--列表上部-->
+                                    <div class="box-head  color-one">
+                                        <h1 class="head-one">
+                                            <span>项目名称</span>
+                                            <p class="check-four">
+                                                <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                                <label class="tick"></label>
+                                            </p>
+                                        </h1>
+                                        <div class="head-two">
                                         <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            2017/07/20
-                                            </a>
-                                    </span>
-                                    </div>
-                                </div>
-                                <!--列表下部-->
-                                <div class="box-bottom">
-                                    <div class="bottom-left">
-                                        <span>项目组:</span>
-                                        <span>计划收入：</span>
-                                        <span>实际收入:</span>
-                                        <span>比例:</span>
-                                        <span>差额：</span>
-                                        <span>目标任务量：</span>
-                                        <span>实际任务量：</span>
-                                        <span>完成比例：</span>
-                                    </div>
-                                    <div class="bottom-right">
-                                        <span>广州研发部</span>
-                                        <span>￥15.580</span>
-                                        <span>￥15.580</span>
-                                        <span>1:3</span>
-                                        <span>￥0</span>
-                                        <span>目标任务量</span>
-                                        <span>￥0</span>
-                                        <span>1</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box border-two">
-                                <!--列表上部-->
-                                <div class="box-head  color-two">
-                                    <h1 class="head-one">
-                                        <span>项目名称</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img">
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                广州
+                                                </a>
+                                        </span>
+                                            <span>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img">
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                2017/07/20
+                                                </a>
+                                        </span>
                                         </div>
-                                    </h1>
-                                    <div class="head-two">
-                                    <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            广州
-                                            </a>
-                                    </span>
-                                        <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            2017/07/20
-                                            </a>
-                                    </span>
                                     </div>
-                                </div>
-                                <!--列表下部-->
-                                <div class="box-bottom">
-                                    <div class="bottom-left">
-                                        <span>项目组:</span>
-                                        <span>计划收入：</span>
-                                        <span>实际收入:</span>
-                                        <span>比例:</span>
-                                        <span>差额：</span>
-                                        <span>目标任务量：</span>
-                                        <span>实际任务量：</span>
-                                        <span>完成比例：</span>
-                                    </div>
-                                    <div class="bottom-right">
-                                        <span>广州研发部</span>
-                                        <span>￥15.580</span>
-                                        <span>￥15.580</span>
-                                        <span>1:3</span>
-                                        <span>￥0</span>
-                                        <span>目标任务量</span>
-                                        <span>￥0</span>
-                                        <span>1</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box border-one">
-                                <!--列表上部-->
-                                <div class="box-head  color-one">
-                                    <h1 class="head-one">
-                                        <span>项目名称</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
+                                    <!--列表下部-->
+                                    <div class="box-bottom">
+                                        <div class="bottom-left">
+                                            <span>项目组:</span>
+                                            <span>计划收入：</span>
+                                            <span>实际收入:</span>
+                                            <span>比例:</span>
+                                            <span>差额：</span>
+                                            <span>目标任务量：</span>
+                                            <span>实际任务量：</span>
+                                            <span>完成比例：</span>
                                         </div>
-                                    </h1>
-                                    <div class="head-two">
-                                    <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            广州
-                                            </a>
-                                    </span>
-                                        <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            2017/07/20
-                                            </a>
-                                    </span>
-                                    </div>
-                                </div>
-                                <!--列表下部-->
-                                <div class="box-bottom">
-                                    <div class="bottom-left">
-                                        <span>项目组:</span>
-                                        <span>计划收入：</span>
-                                        <span>实际收入:</span>
-                                        <span>比例:</span>
-                                        <span>差额：</span>
-                                        <span>目标任务量：</span>
-                                        <span>实际任务量：</span>
-                                        <span>完成比例：</span>
-                                    </div>
-                                    <div class="bottom-right">
-                                        <span>广州研发部</span>
-                                        <span>￥15.580</span>
-                                        <span>￥15.580</span>
-                                        <span>1:3</span>
-                                        <span>￥0</span>
-                                        <span>目标任务量</span>
-                                        <span>￥0</span>
-                                        <span>1</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box border-three">
-                                <!--列表上部-->
-                                <div class="box-head  color-three">
-                                    <h1 class="head-one">
-                                        <span>项目名称</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
+                                        <div class="bottom-right">
+                                            <span>广州研发部</span>
+                                            <span>￥15.580</span>
+                                            <span>￥15.580</span>
+                                            <span>1:3</span>
+                                            <span>￥0</span>
+                                            <span>目标任务量</span>
+                                            <span>￥0</span>
+                                            <span>1</span>
                                         </div>
-                                    </h1>
-                                    <div class="head-two">
-                                    <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            广州
-                                            </a>
-                                    </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box border-two">
+                                    <!--列表上部-->
+                                    <div class="box-head  color-two">
+                                        <h1 class="head-one">
+                                            <span>项目名称</span>
+                                            <p class="check-four">
+                                                <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                                <label class="tick"></label>
+                                            </p>
+                                        </h1>
+                                        <div class="head-two">
                                         <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            2017/07/20
-                                            </a>
-                                    </span>
-                                    </div>
-                                </div>
-                                <!--列表下部-->
-                                <div class="box-bottom">
-                                    <div class="bottom-left">
-                                        <span>项目组:</span>
-                                        <span>计划收入：</span>
-                                        <span>实际收入:</span>
-                                        <span>比例:</span>
-                                        <span>差额：</span>
-                                        <span>目标任务量：</span>
-                                        <span>实际任务量：</span>
-                                        <span>完成比例：</span>
-                                    </div>
-                                    <div class="bottom-right">
-                                        <span>广州研发部</span>
-                                        <span>￥15.580</span>
-                                        <span>￥15.580</span>
-                                        <span>1:3</span>
-                                        <span>￥0</span>
-                                        <span>目标任务量</span>
-                                        <span>￥0</span>
-                                        <span>1</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box border-one">
-                                <!--列表上部-->
-                                <div class="box-head  color-one">
-                                    <h1 class="head-one">
-                                        <span>项目名称</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img" >
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                广州
+                                                </a>
+                                        </span>
+                                            <span>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img">
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                2017/07/20
+                                                </a>
+                                        </span>
                                         </div>
-                                    </h1>
-                                    <div class="head-two">
-                                    <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            广州
-                                            </a>
-                                    </span>
-                                        <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            2017/07/20
-                                            </a>
-                                    </span>
                                     </div>
-                                </div>
-                                <!--列表下部-->
-                                <div class="box-bottom">
-                                    <div class="bottom-left">
-                                        <span>项目组:</span>
-                                        <span>计划收入：</span>
-                                        <span>实际收入:</span>
-                                        <span>比例:</span>
-                                        <span>差额：</span>
-                                        <span>目标任务量：</span>
-                                        <span>实际任务量：</span>
-                                        <span>完成比例：</span>
-                                    </div>
-                                    <div class="bottom-right">
-                                        <span>广州研发部</span>
-                                        <span>￥15.580</span>
-                                        <span>￥15.580</span>
-                                        <span>1:3</span>
-                                        <span>￥0</span>
-                                        <span>目标任务量</span>
-                                        <span>￥0</span>
-                                        <span>1</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box border-two">
-                                <!--列表上部-->
-                                <div class="box-head  color-two">
-                                    <h1 class="head-one">
-                                        <span>项目名称</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
+                                    <!--列表下部-->
+                                    <div class="box-bottom">
+                                        <div class="bottom-left">
+                                            <span>项目组:</span>
+                                            <span>计划收入：</span>
+                                            <span>实际收入:</span>
+                                            <span>比例:</span>
+                                            <span>差额：</span>
+                                            <span>目标任务量：</span>
+                                            <span>实际任务量：</span>
+                                            <span>完成比例：</span>
                                         </div>
-                                    </h1>
-                                    <div class="head-two">
-                                    <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            广州
-                                            </a>
-                                    </span>
-                                        <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            2017/07/20
-                                            </a>
-                                    </span>
-                                    </div>
-                                </div>
-                                <!--列表下部-->
-                                <div class="box-bottom">
-                                    <div class="bottom-left">
-                                        <span>项目组:</span>
-                                        <span>计划收入：</span>
-                                        <span>实际收入:</span>
-                                        <span>比例:</span>
-                                        <span>差额：</span>
-                                        <span>目标任务量：</span>
-                                        <span>实际任务量：</span>
-                                        <span>完成比例：</span>
-                                    </div>
-                                    <div class="bottom-right">
-                                        <span>广州研发部</span>
-                                        <span>￥15.580</span>
-                                        <span>￥15.580</span>
-                                        <span>1:3</span>
-                                        <span>￥0</span>
-                                        <span>目标任务量</span>
-                                        <span>￥0</span>
-                                        <span>1</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box border-one">
-                                <!--列表上部-->
-                                <div class="box-head  color-one">
-                                    <h1 class="head-one">
-                                        <span>项目名称</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
+                                        <div class="bottom-right">
+                                            <span>广州研发部</span>
+                                            <span>￥15.580</span>
+                                            <span>￥15.580</span>
+                                            <span>1:3</span>
+                                            <span>￥0</span>
+                                            <span>目标任务量</span>
+                                            <span>￥0</span>
+                                            <span>1</span>
                                         </div>
-                                    </h1>
-                                    <div class="head-two">
-                                    <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            广州
-                                            </a>
-                                    </span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box border-one">
+                                    <!--列表上部-->
+                                    <div class="box-head  color-one">
+                                        <h1 class="head-one">
+                                            <span>项目名称</span>
+                                            <p class="check-four">
+                                                <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                                <label class="tick"></label>
+                                            </p>
+                                        </h1>
+                                        <div class="head-two">
                                         <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            2017/07/20
-                                            </a>
-                                    </span>
-                                    </div>
-                                </div>
-                                <!--列表下部-->
-                                <div class="box-bottom">
-                                    <div class="bottom-left">
-                                        <span>项目组:</span>
-                                        <span>计划收入：</span>
-                                        <span>实际收入:</span>
-                                        <span>比例:</span>
-                                        <span>差额：</span>
-                                        <span>目标任务量：</span>
-                                        <span>实际任务量：</span>
-                                        <span>完成比例：</span>
-                                    </div>
-                                    <div class="bottom-right">
-                                        <span>广州研发部</span>
-                                        <span>￥15.580</span>
-                                        <span>￥15.580</span>
-                                        <span>1:3</span>
-                                        <span>￥0</span>
-                                        <span>目标任务量</span>
-                                        <span>￥0</span>
-                                        <span>1</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="box border-three">
-                                <!--列表上部-->
-                                <div class="box-head  color-three">
-                                    <h1 class="head-one">
-                                        <span>项目名称</span>
-                                        <div class="checkbox-group">
-                                            <input type="radio" id="one" name="dan"/>
-                                            <label for="one"></label>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img">
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                广州
+                                                </a>
+                                        </span>
+                                            <span>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img">
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                2017/07/20
+                                                </a>
+                                        </span>
                                         </div>
-                                    </h1>
-                                    <div class="head-two">
-                                    <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            广州
-                                            </a>
-                                    </span>
+                                    </div>
+                                    <!--列表下部-->
+                                    <div class="box-bottom">
+                                        <div class="bottom-left">
+                                            <span>项目组:</span>
+                                            <span>计划收入：</span>
+                                            <span>实际收入:</span>
+                                            <span>比例:</span>
+                                            <span>差额：</span>
+                                            <span>目标任务量：</span>
+                                            <span>实际任务量：</span>
+                                            <span>完成比例：</span>
+                                        </div>
+                                        <div class="bottom-right">
+                                            <span>广州研发部</span>
+                                            <span>￥15.580</span>
+                                            <span>￥15.580</span>
+                                            <span>1:3</span>
+                                            <span>￥0</span>
+                                            <span>目标任务量</span>
+                                            <span>￥0</span>
+                                            <span>1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box border-three">
+                                    <!--列表上部-->
+                                    <div class="box-head  color-three">
+                                        <h1 class="head-one">
+                                            <span>项目名称</span>
+                                            <p class="check-four">
+                                                <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                                <label class="tick"></label>
+                                            </p>
+                                        </h1>
+                                        <div class="head-two">
                                         <span>
-                                        <a href="javascript:void(0)">
-                                                <i class="list-icon">
-                                                    <svg role="img" class="add">
-                                                        <use xlink:href="#add"></use>
-                                                    </svg>
-                                                </i>
-                                            2017/07/20
-                                            </a>
-                                    </span>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img" >
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                广州
+                                                </a>
+                                        </span>
+                                            <span>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img">
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                2017/07/20
+                                                </a>
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <!--列表下部-->
+                                    <div class="box-bottom">
+                                        <div class="bottom-left">
+                                            <span>项目组:</span>
+                                            <span>计划收入：</span>
+                                            <span>实际收入:</span>
+                                            <span>比例:</span>
+                                            <span>差额：</span>
+                                            <span>目标任务量：</span>
+                                            <span>实际任务量：</span>
+                                            <span>完成比例：</span>
+                                        </div>
+                                        <div class="bottom-right">
+                                            <span>广州研发部</span>
+                                            <span>￥15.580</span>
+                                            <span>￥15.580</span>
+                                            <span>1:3</span>
+                                            <span>￥0</span>
+                                            <span>目标任务量</span>
+                                            <span>￥0</span>
+                                            <span>1</span>
+                                        </div>
                                     </div>
                                 </div>
-                                <!--列表下部-->
-                                <div class="box-bottom">
-                                    <div class="bottom-left">
-                                        <span>项目组:</span>
-                                        <span>计划收入：</span>
-                                        <span>实际收入:</span>
-                                        <span>比例:</span>
-                                        <span>差额：</span>
-                                        <span>目标任务量：</span>
-                                        <span>实际任务量：</span>
-                                        <span>完成比例：</span>
+                            </li>
+                            <li>
+                                <div class="box border-one">
+                                    <!--列表上部-->
+                                    <div class="box-head  color-one">
+                                        <h1 class="head-one">
+                                            <span>项目名称</span>
+                                            <p class="check-four">
+                                                <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                                <label class="tick"></label>
+                                            </p>
+                                        </h1>
+                                        <div class="head-two">
+                                        <span>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img">
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                广州
+                                                </a>
+                                        </span>
+                                            <span>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img">
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                2017/07/20
+                                                </a>
+                                        </span>
+                                        </div>
                                     </div>
-                                    <div class="bottom-right">
-                                        <span>广州研发部</span>
-                                        <span>￥15.580</span>
-                                        <span>￥15.580</span>
-                                        <span>1:3</span>
-                                        <span>￥0</span>
-                                        <span>目标任务量</span>
-                                        <span>￥0</span>
-                                        <span>1</span>
+                                    <!--列表下部-->
+                                    <div class="box-bottom">
+                                        <div class="bottom-left">
+                                            <span>项目组:</span>
+                                            <span>计划收入：</span>
+                                            <span>实际收入:</span>
+                                            <span>比例:</span>
+                                            <span>差额：</span>
+                                            <span>目标任务量：</span>
+                                            <span>实际任务量：</span>
+                                            <span>完成比例：</span>
+                                        </div>
+                                        <div class="bottom-right">
+                                            <span>广州研发部</span>
+                                            <span>￥15.580</span>
+                                            <span>￥15.580</span>
+                                            <span>1:3</span>
+                                            <span>￥0</span>
+                                            <span>目标任务量</span>
+                                            <span>￥0</span>
+                                            <span>1</span>
+                                        </div>
                                     </div>
                                 </div>
+                            </li>
+                            <li>
+                                <div class="box border-two">
+                                    <!--列表上部-->
+                                    <div class="box-head  color-two">
+                                        <h1 class="head-one">
+                                            <span>项目名称</span>
+                                            <p class="check-four">
+                                                <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                                <label class="tick"></label>
+                                            </p>
+                                        </h1>
+                                        <div class="head-two">
+                                        <span>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img">
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                广州
+                                                </a>
+                                        </span>
+                                            <span>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img">
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                2017/07/20
+                                                </a>
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <!--列表下部-->
+                                    <div class="box-bottom">
+                                        <div class="bottom-left">
+                                            <span>项目组:</span>
+                                            <span>计划收入：</span>
+                                            <span>实际收入:</span>
+                                            <span>比例:</span>
+                                            <span>差额：</span>
+                                            <span>目标任务量：</span>
+                                            <span>实际任务量：</span>
+                                            <span>完成比例：</span>
+                                        </div>
+                                        <div class="bottom-right">
+                                            <span>广州研发部</span>
+                                            <span>￥15.580</span>
+                                            <span>￥15.580</span>
+                                            <span>1:3</span>
+                                            <span>￥0</span>
+                                            <span>目标任务量</span>
+                                            <span>￥0</span>
+                                            <span>1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box border-one">
+                                    <!--列表上部-->
+                                    <div class="box-head  color-one">
+                                        <h1 class="head-one">
+                                            <span>项目名称</span>
+                                            <p class="check-four">
+                                                <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                                <label class="tick"></label>
+                                            </p>
+                                        </h1>
+                                        <div class="head-two">
+                                        <span>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img">
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                广州
+                                                </a>
+                                        </span>
+                                            <span>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img">
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                2017/07/20
+                                                </a>
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <!--列表下部-->
+                                    <div class="box-bottom">
+                                        <div class="bottom-left">
+                                            <span>项目组:</span>
+                                            <span>计划收入：</span>
+                                            <span>实际收入:</span>
+                                            <span>比例:</span>
+                                            <span>差额：</span>
+                                            <span>目标任务量：</span>
+                                            <span>实际任务量：</span>
+                                            <span>完成比例：</span>
+                                        </div>
+                                        <div class="bottom-right">
+                                            <span>广州研发部</span>
+                                            <span>￥15.580</span>
+                                            <span>￥15.580</span>
+                                            <span>1:3</span>
+                                            <span>￥0</span>
+                                            <span>目标任务量</span>
+                                            <span>￥0</span>
+                                            <span>1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="box border-three">
+                                    <!--列表上部-->
+                                    <div class="box-head  color-three">
+                                        <h1 class="head-one">
+                                            <span>项目名称</span>
+                                            <p class="check-four">
+                                                <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                                <label class="tick"></label>
+                                            </p>
+                                        </h1>
+                                        <div class="head-two">
+                                        <span>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img" >
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                广州
+                                                </a>
+                                        </span>
+                                            <span>
+                                            <a href="javascript:void(0)">
+                                                    <i class="list-icon">
+                                                        <svg role="img" >
+                                                            <use xlink:href="#add"></use>
+                                                        </svg>
+                                                    </i>
+                                                2017/07/20
+                                                </a>
+                                        </span>
+                                        </div>
+                                    </div>
+                                    <!--列表下部-->
+                                    <div class="box-bottom">
+                                        <div class="bottom-left">
+                                            <span>项目组:</span>
+                                            <span>计划收入：</span>
+                                            <span>实际收入:</span>
+                                            <span>比例:</span>
+                                            <span>差额：</span>
+                                            <span>目标任务量：</span>
+                                            <span>实际任务量：</span>
+                                            <span>完成比例：</span>
+                                        </div>
+                                        <div class="bottom-right">
+                                            <span>广州研发部</span>
+                                            <span>￥15.580</span>
+                                            <span>￥15.580</span>
+                                            <span>1:3</span>
+                                            <span>￥0</span>
+                                            <span>目标任务量</span>
+                                            <span>￥0</span>
+                                            <span>1</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-paging">
+                        <div class="paging-box">
+                            <div class="paging-left">
+                                <p class="left-one inactive">显示10项</p>
+                                <p class="left-two">当前显示1到10项，共20页</p>
                             </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="right-paging">
-                    <div class="paging-box">
-                        <div class="paging-left">
-                            <select class="left-one inactive">
-                                <option>显示10项</option>
-                                <option>显示20项</option>
-                                <option>显示30项</option>
-                            </select>
-                            <p class="left-two">当前显示1到10项，共20页</p>
-                        </div>
-                        <div class="paging-right">
-                            <ul>
-                                <li><</li>
-                                <li  class="active">1</li>
-                                <li>2</li>
-                                <li>3</li>
-                                <li>4</li>
-                                <li>5</li>
-                                <li>></li>
-                                <li class="li-one">到1页</li>
-                                <li class="li-two">确定</li>
-                            </ul>
+                            <div class="paging-right">
+                                <ul>
+                                    <li><</li>
+                                    <li  class="active">1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>></li>
+                                    <li class="li-one">到1页</li>
+                                    <li class="li-two">确定</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+                    <!--添加-->
+                <div class="add">
+                        <ul class="input-list">
+                            <li>
+                                <label>地区<i>*</i></label>
+                                <select class="drop-down">
+                                    <option value="" disabled>请选择</option>
+                                    <option value="北京">北京</option>
+                                    <option value="上海">上海</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label>项目组<i>*</i></label>
+                                <select class="drop-down">
+                                    <option value="" disabled>请选择</option>
+                                    <option value="北京">北京</option>
+                                    <option value="上海">上海</option>
+                                </select>
+                                <input type="text" value="我是可手填的下拉框" class="input-dom">
+                            </li>
+                            <li>
+                                <label>物品名称<i>*</i></label>
+                                <input type="text" class="drop-down">
+                            </li>
+                            <li>
+                                <label>单位<i>*</i></label>
+                                <input type="text" class="drop-down">
+                            </li>
+                            <li>
+                                <label>领用人<i>*</i></label>
+                                <select class="drop-down">
+                                    <option value="" disabled>请选择</option>
+                                    <option value="北京">北京</option>
+                                    <option value="上海">上海</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label>领用日期<i>*</i></label>
+                                <input type="text" class="drop-date">
+                            </li>
+                            <li>
+                                <label>用途<i>*</i></label>
+                                <select class="drop-down">
+                                    <option value="" disabled>请选择</option>
+                                    <option value="北京">北京</option>
+                                    <option value="上海">上海</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label>审核人<i>*</i></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>备注<i>*</i></label>
+                                <input type="text">
+                            </li>
+                            <li>
+                                <label>领用编号<i>*</i></label>
+                                <select class="drop-down">
+                                    <option value="" disabled>请选择</option>
+                                    <option value="北京">北京</option>
+                                    <option value="上海">上海</option>
+                                </select>
+                            </li>
+                        </ul>
+                        <p class="input-bottom">
+                            <button class="cancel">取消</button>
+                            <button class="sure">确定</button>
+                        </p>
+                    </div>
+                    <!--删除-->
+                <div class="delete">
+                        <div class="del-head">
+                            <span>温馨提示</span>
+                            <small><img src="/images/delete.png"></small>
+                        </div>
+                        <div class="del-con">
+                            <p>您确定删除这条数据吗？</p>
+                            <p class="btn">
+                                <button>确定</button>
+                                <button>取消</button>
+                            </p>
+                        </div>
+                    </div>
             </div>
         </div>
 
