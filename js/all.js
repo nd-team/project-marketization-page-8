@@ -39,7 +39,6 @@ $(".right-head ul li").click(function(){
     var listTitle = $(this).attr("data-title");
     $('.right-head ul li').removeClass('current-color');
     $(this).addClass('current-color');
-    $(this).parents('.con-right').find('.'+listTitle).show().siblings().hide();
 });
 
 $(".checked-none").each(function(i){
