@@ -10,7 +10,6 @@ const sassLint = require('gulp-sass-lint');//sass代码规范检查
 const svgSymbols = require('gulp-svg-symbols');//svg图标字体
 const path = require('path');
 
-
 gulp.task('sass', () =>{
     return gulp.src('./sass/**/*.scss')
         .pipe(sourcemaps.init())

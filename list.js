@@ -11,7 +11,7 @@ function isDirectory (dir) {
 }
 
 function getFilenames (dir, regexp, recursive) {
-    var  files = []
+    var  files = [];
     if (!isDirectory(dir)) throw new Error(dir + ' is not a directory!');
     fs.readdirSync(dir).forEach((filename) => {
         const fullPath = path.join(dir, filename);
@@ -29,7 +29,7 @@ getFilenames(__dirname+'/pages', /.html$/, true).forEach((file) => {
     var fileName = path.basename(file);
     var fileHref = file.split('project-marketization-page-8')[1];
 
-     html +=`<li><a href="${fileHref}">${fileName}</a></li>`;
+    html +=`<li><a href="${fileHref}">${fileName}</a></li>`;
 
     console.info(fileHref);
 

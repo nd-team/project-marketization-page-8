@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta name="keywords" content="项目市场化">
     <meta name="description" content="项目市场化">
-    <link rel="stylesheet" href="/css/material/index.css">
+    <link rel="stylesheet" href="/css/material/department.css">
 </head>
 <body>
 <header>
@@ -43,6 +43,21 @@
         </p>
     </div>
 </header>
+<section class="main-module">
+    <div class="major-topic">
+        <div class="topic-nav">
+            <ul>
+                <span>应交税金</span>
+                <li>
+                    <a href="projectMonth.html" class="finactive" >应交税金</a>
+                </li>
+                <li>
+                    <a href="Project_week.html" >项目上税金</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 <div class="content">
     <nav>
         <ul class="list">
@@ -150,125 +165,988 @@
             </li>
         </ul>
     </nav>
-    <section class="main-module">
-        <div class="major-topic">
-            <div class="topic-nav">
-                <ul>
-                    <span>应交税金</span>
-                    <li>
-                        <a href="projectMonth.html" class="finactive" >应交税金</a>
-                    </li>
-                    <li>
-                        <a href="Project_week.html" >项目上税金</a>
-                    </li>
-                </ul>
+    <div class="content-right content-other">
+        <div class="right-header right-time">
+            <div class="search-content">
+                <input type="text" placeholder="请输入关键字">
+                <label>搜索</label>
             </div>
+            <ul class="right-nav">
+                <li  data-title="list"  class="current-color">
+                    <a href="javascript:void(0)">
+                        <i class="list-icon">
+                            <svg role="img" class="list">
+                                <use xlink:href="#list"></use>
+                            </svg>
+                        </i>
+                        列表
+                    </a>
+                </li>
+                <li data-title="add">
+                    <a href="javascript:void(0)">
+                        <i class="list-icon">
+                            <svg role="img" class="add">
+                                <use xlink:href="#add"></use>
+                            </svg>
+                        </i>    添加
+                    </a></li>
+                <li><a href="javascript:void(0)"><i class="list-icon">
+                    <svg role="img" class="edit">
+                        <use xlink:href="#edit"></use>
+                    </svg>
+                </i>编辑</a> </li>
+                <li data-title="delete"><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
+                    <use xlink:href="#delete"></use>
+                </svg></i>删除</a> </li>
+                <li data-title="share"><a href="javascript:void(0)"><i class="list-icon">
+                    <svg role="img" class="delete">
+                        <use xlink:href="#collect"></use>
+                    </svg></i>分摊</a> </li>
+                <li data-title="complete"><a href="javascript:void(0)"><i class="list-icon">
+                    <svg role="img" class="complete">
+                        <use xlink:href="#collect"></use>
+                    </svg></i>添加项目上税金</a> </li>
+                <li data-title="company"><a href="javascript:void(0)"><i class="list-icon">
+                    <svg role="img" class="complete">
+                        <use xlink:href="#collect"></use>
+                    </svg></i>公司汇总</a> </li>
+                <li data-title="type"><a href="javascript:void(0)"><i class="list-icon">
+                    <svg role="img" class="complete">
+                        <use xlink:href="#collect"></use>
+                    </svg></i>税种汇总</a> </li>
+            </ul>
         </div>
-    </section>
-    <div class="con-right">
-        <div class="content-box">
-            <div class="right-head">
-                <div class="search-content">
-                    <input type="text" placeholder="请输入关键字">
-                    <label>搜索</label>
-                </div>
-                <ul class="right-nav">
-                    <li  data-title="list">
-                        <a href="javascript:void(0)">
-                            <i class="list-icon">
-                                <svg role="img" class="list">
-                                    <use xlink:href="#list"></use>
-                                </svg>
-                            </i>
-                            列表
-                        </a>
-                    </li>
-                    <li data-title="add">
-                        <a href="javascript:void(0)">
-                            <i class="list-icon">
-                                <svg role="img" class="add">
-                                    <use xlink:href="#add"></use>
-                                </svg>
-                            </i>    添加
-                        </a></li>
-                    <li><a href="javascript:void(0)"><i class="list-icon">
-                        <svg role="img" class="edit">
-                            <use xlink:href="#edit"></use>
-                        </svg>
-                    </i>编辑</a> </li>
-                    <li data-title="delete"><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
-                        <use xlink:href="#delete"></use>
-                    </svg></i>删除</a> </li>
-                    <li class="current-color"  data-title="share"><a href="javascript:void(0)"><i class="list-icon">
-                        <svg role="img" class="delete">
-                            <use xlink:href="#collect"></use>
-                        </svg></i>分摊</a> </li>
-                    <li data-title="complete"><a href="javascript:void(0)"><i class="list-icon">
-                        <svg role="img" class="complete">
-                            <use xlink:href="#collect"></use>
-                        </svg></i>添加项目上税金</a> </li>
-                    <li data-title="company"><a href="javascript:void(0)"><i class="list-icon">
-                        <svg role="img" class="complete">
-                            <use xlink:href="#collect"></use>
-                        </svg></i>公司汇总</a> </li>
-                    <li data-title="type"><a href="javascript:void(0)"><i class="list-icon">
-                        <svg role="img" class="complete">
-                            <use xlink:href="#collect"></use>
-                        </svg></i>税种汇总</a> </li>
-                </ul>
-            </div>
-        <!--<div class="details-right">
-            <div class="right-header">
-                <div class="search-content">
-                    <input type="text" placeholder="请输入关键字">
-                    <label>搜索</label>
-                </div>
-                <ul class="right-nav">
-                    <li  data-title="list">
-                        <a href="javascript:void(0)">
-                            <i class="list-icon">
-                                <svg role="img" class="list">
-                                    <use xlink:href="#list"></use>
-                                </svg>
-                            </i>
-                            列表
-                        </a>
-                    </li>
-                    <li data-title="add">
-                        <a href="javascript:void(0)">
-                            <i class="list-icon">
-                                <svg role="img" class="add">
-                                    <use xlink:href="#add"></use>
-                                </svg>
-                            </i>    添加
-                        </a></li>
-                    <li><a href="javascript:void(0)"><i class="list-icon">
-                        <svg role="img" class="edit">
-                            <use xlink:href="#edit"></use>
-                        </svg>
-                    </i>编辑</a> </li>
-                    <li data-title="delete"><a href="javascript:void(0)"><i class="list-icon"><svg role="img" class="delete">
-                        <use xlink:href="#delete"></use>
-                    </svg></i>删除</a> </li>
-                    <li class="current-color"  data-title="share"><a href="javascript:void(0)"><i class="list-icon">
-                        <svg role="img" class="delete">
-                            <use xlink:href="#collect"></use>
-                        </svg></i>分摊</a> </li>
-                    <li data-title="complete"><a href="javascript:void(0)"><i class="list-icon">
-                        <svg role="img" class="complete">
-                            <use xlink:href="#collect"></use>
-                        </svg></i>添加项目上税金</a> </li>
-                    <li data-title="company"><a href="javascript:void(0)"><i class="list-icon">
-                        <svg role="img" class="complete">
-                            <use xlink:href="#collect"></use>
-                        </svg></i>公司汇总</a> </li>
-                    <li data-title="type"><a href="javascript:void(0)"><i class="list-icon">
-                        <svg role="img" class="complete">
-                            <use xlink:href="#collect"></use>
-                        </svg></i>税种汇总</a> </li>
-                </ul>
-            </div>-->
             <div class="content-body">
+                <!--列表-->
+                <div class="list">
+                    <ul class="table">
+                        <li class="list-head">
+                                      <span>
+                                           <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                           <label class="tick"></label>
+                                      </span>
+                            <span>序号</span>
+                            <span>年份</span>
+                            <span>月份</span>
+                            <span>类别</span>
+                            <span>科目</span>
+                            <span>总准备金</span>
+                            <span>项目</span>
+                            <span>操作</span>
+                        </li>
+                        <li class="list-all">
+                            <div class="list-text">
+                                <p>
+                                    <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                    <label class="tick"></label>
+                                </p>
+                                <p>1</p>
+                                <p>2017</p>
+                                <p>8</p>
+                                <p>ddsa</p>
+                                <p>语文</p>
+                                <p>18000</p>
+                                <p>商城</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">
+                                        <svg role="img" class="search2">
+                                            <use xlink:href="#search2"></use>
+                                        </svg>
+                                        查看详细
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-head">
+                                            <span>姓名</span>
+                                            <span>员工编号</span>
+                                            <span>邮箱账号</span>
+                                            <span>联系电话</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>北京艾佳有限公司</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>专业</span>
+                                            <span>银行卡账号</span>
+                                            <span>开户行</span>
+                                            <span>开户账号</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>设计</span>
+                                            <span>100212012010</span>
+                                            <span>广州</span>
+                                            <span>100212012010</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>身份证复印件</span>
+                                            <span>学历学位证书复印件</span>
+                                            <span>照片资质版</span>
+                                            <span>照片电子版</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>其本人银行卡、身份证、签名的复印件</span>
+                                            <span>薪资是否确认</span>
+                                            <span>是否已邮件发生入职通告</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p class="pick">收起></p>
+                            </div>
+                        </li>
+                        <li class="list-all">
+                            <div class="list-text">
+                                <p>
+                                    <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                    <label class="tick"></label>
+                                </p>
+                                <p>1</p>
+                                <p>2017</p>
+                                <p>8</p>
+                                <p>ddsa</p>
+                                <p>语文</p>
+                                <p>18000</p>
+                                <p>商城</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">
+                                        <svg role="img" class="search2">
+                                            <use xlink:href="#search2"></use>
+                                        </svg>
+                                        查看详细
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-head">
+                                            <span>姓名</span>
+                                            <span>员工编号</span>
+                                            <span>邮箱账号</span>
+                                            <span>联系电话</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>北京艾佳有限公司</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>专业</span>
+                                            <span>银行卡账号</span>
+                                            <span>开户行</span>
+                                            <span>开户账号</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>设计</span>
+                                            <span>100212012010</span>
+                                            <span>广州</span>
+                                            <span>100212012010</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>身份证复印件</span>
+                                            <span>学历学位证书复印件</span>
+                                            <span>照片资质版</span>
+                                            <span>照片电子版</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>其本人银行卡、身份证、签名的复印件</span>
+                                            <span>薪资是否确认</span>
+                                            <span>是否已邮件发生入职通告</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p class="pick">收起></p>
+                            </div>
+                        </li>
+                        <li class="list-all">
+                            <div class="list-text">
+                                <p>
+                                    <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                    <label class="tick"></label>
+                                </p>
+                                <p>1</p>
+                                <p>2017</p>
+                                <p>8</p>
+                                <p>ddsa</p>
+                                <p>语文</p>
+                                <p>18000</p>
+                                <p>商城</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">
+                                        <svg role="img" class="search2">
+                                            <use xlink:href="#search2"></use>
+                                        </svg>
+                                        查看详细
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-head">
+                                            <span>姓名</span>
+                                            <span>员工编号</span>
+                                            <span>邮箱账号</span>
+                                            <span>联系电话</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>北京艾佳有限公司</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>专业</span>
+                                            <span>银行卡账号</span>
+                                            <span>开户行</span>
+                                            <span>开户账号</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>设计</span>
+                                            <span>100212012010</span>
+                                            <span>广州</span>
+                                            <span>100212012010</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>身份证复印件</span>
+                                            <span>学历学位证书复印件</span>
+                                            <span>照片资质版</span>
+                                            <span>照片电子版</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>其本人银行卡、身份证、签名的复印件</span>
+                                            <span>薪资是否确认</span>
+                                            <span>是否已邮件发生入职通告</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p class="pick">收起></p>
+                            </div>
+                        </li>
+                        <li class="list-all">
+                            <div class="list-text">
+                                <p>
+                                    <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                    <label class="tick"></label>
+                                </p>
+                                <p>1</p>
+                                <p>2017</p>
+                                <p>8</p>
+                                <p>ddsa</p>
+                                <p>语文</p>
+                                <p>18000</p>
+                                <p>商城</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">
+                                        <svg role="img" class="search2">
+                                            <use xlink:href="#search2"></use>
+                                        </svg>
+                                        查看详细
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-head">
+                                            <span>姓名</span>
+                                            <span>员工编号</span>
+                                            <span>邮箱账号</span>
+                                            <span>联系电话</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>北京艾佳有限公司</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>专业</span>
+                                            <span>银行卡账号</span>
+                                            <span>开户行</span>
+                                            <span>开户账号</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>设计</span>
+                                            <span>100212012010</span>
+                                            <span>广州</span>
+                                            <span>100212012010</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>身份证复印件</span>
+                                            <span>学历学位证书复印件</span>
+                                            <span>照片资质版</span>
+                                            <span>照片电子版</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>其本人银行卡、身份证、签名的复印件</span>
+                                            <span>薪资是否确认</span>
+                                            <span>是否已邮件发生入职通告</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p class="pick">收起></p>
+                            </div>
+                        </li>
+                        <li class="list-all">
+                            <div class="list-text">
+                                <p>
+                                    <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                    <label class="tick"></label>
+                                </p>
+                                <p>1</p>
+                                <p>2017</p>
+                                <p>8</p>
+                                <p>ddsa</p>
+                                <p>语文</p>
+                                <p>18000</p>
+                                <p>商城</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">
+                                        <svg role="img" class="search2">
+                                            <use xlink:href="#search2"></use>
+                                        </svg>
+                                        查看详细
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-head">
+                                            <span>姓名</span>
+                                            <span>员工编号</span>
+                                            <span>邮箱账号</span>
+                                            <span>联系电话</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>北京艾佳有限公司</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>专业</span>
+                                            <span>银行卡账号</span>
+                                            <span>开户行</span>
+                                            <span>开户账号</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>设计</span>
+                                            <span>100212012010</span>
+                                            <span>广州</span>
+                                            <span>100212012010</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>身份证复印件</span>
+                                            <span>学历学位证书复印件</span>
+                                            <span>照片资质版</span>
+                                            <span>照片电子版</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>其本人银行卡、身份证、签名的复印件</span>
+                                            <span>薪资是否确认</span>
+                                            <span>是否已邮件发生入职通告</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p class="pick">收起></p>
+                            </div>
+                        </li>
+                        <li class="list-all">
+                            <div class="list-text">
+                                <p>
+                                    <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                    <label class="tick"></label>
+                                </p>
+                                <p>1</p>
+                                <p>2017</p>
+                                <p>8</p>
+                                <p>ddsa</p>
+                                <p>语文</p>
+                                <p>18000</p>
+                                <p>商城</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">
+                                        <svg role="img" class="search2">
+                                            <use xlink:href="#search2"></use>
+                                        </svg>
+                                        查看详细
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-head">
+                                            <span>姓名</span>
+                                            <span>员工编号</span>
+                                            <span>邮箱账号</span>
+                                            <span>联系电话</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>北京艾佳有限公司</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>专业</span>
+                                            <span>银行卡账号</span>
+                                            <span>开户行</span>
+                                            <span>开户账号</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>设计</span>
+                                            <span>100212012010</span>
+                                            <span>广州</span>
+                                            <span>100212012010</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>身份证复印件</span>
+                                            <span>学历学位证书复印件</span>
+                                            <span>照片资质版</span>
+                                            <span>照片电子版</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>其本人银行卡、身份证、签名的复印件</span>
+                                            <span>薪资是否确认</span>
+                                            <span>是否已邮件发生入职通告</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p class="pick">收起></p>
+                            </div>
+                        </li>
+                        <li class="list-all">
+                            <div class="list-text">
+                                <p>
+                                    <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                    <label class="tick"></label>
+                                </p>
+                                <p>1</p>
+                                <p>2017</p>
+                                <p>8</p>
+                                <p>ddsa</p>
+                                <p>语文</p>
+                                <p>18000</p>
+                                <p>商城</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">
+                                        <svg role="img" class="search2">
+                                            <use xlink:href="#search2"></use>
+                                        </svg>
+                                        查看详细
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-head">
+                                            <span>姓名</span>
+                                            <span>员工编号</span>
+                                            <span>邮箱账号</span>
+                                            <span>联系电话</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>北京艾佳有限公司</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>专业</span>
+                                            <span>银行卡账号</span>
+                                            <span>开户行</span>
+                                            <span>开户账号</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>设计</span>
+                                            <span>100212012010</span>
+                                            <span>广州</span>
+                                            <span>100212012010</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>身份证复印件</span>
+                                            <span>学历学位证书复印件</span>
+                                            <span>照片资质版</span>
+                                            <span>照片电子版</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>其本人银行卡、身份证、签名的复印件</span>
+                                            <span>薪资是否确认</span>
+                                            <span>是否已邮件发生入职通告</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p class="pick">收起></p>
+                            </div>
+                        </li>
+                        <li class="list-all">
+                            <div class="list-text">
+                                <p>
+                                    <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                    <label class="tick"></label>
+                                </p>
+                                <p>1</p>
+                                <p>2017</p>
+                                <p>8</p>
+                                <p>ddsa</p>
+                                <p>语文</p>
+                                <p>18000</p>
+                                <p>商城</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">
+                                        <svg role="img" class="search2">
+                                            <use xlink:href="#search2"></use>
+                                        </svg>
+                                        查看详细
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-head">
+                                            <span>姓名</span>
+                                            <span>员工编号</span>
+                                            <span>邮箱账号</span>
+                                            <span>联系电话</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>北京艾佳有限公司</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>专业</span>
+                                            <span>银行卡账号</span>
+                                            <span>开户行</span>
+                                            <span>开户账号</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>设计</span>
+                                            <span>100212012010</span>
+                                            <span>广州</span>
+                                            <span>100212012010</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>身份证复印件</span>
+                                            <span>学历学位证书复印件</span>
+                                            <span>照片资质版</span>
+                                            <span>照片电子版</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>其本人银行卡、身份证、签名的复印件</span>
+                                            <span>薪资是否确认</span>
+                                            <span>是否已邮件发生入职通告</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p class="pick">收起></p>
+                            </div>
+                        </li>
+                        <li class="list-all">
+                            <div class="list-text">
+                                <p>
+                                    <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                    <label class="tick"></label>
+                                </p>
+                                <p>1</p>
+                                <p>2017</p>
+                                <p>8</p>
+                                <p>ddsa</p>
+                                <p>语文</p>
+                                <p>18000</p>
+                                <p>商城</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">
+                                        <svg role="img" class="search2">
+                                            <use xlink:href="#search2"></use>
+                                        </svg>
+                                        查看详细
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-head">
+                                            <span>姓名</span>
+                                            <span>员工编号</span>
+                                            <span>邮箱账号</span>
+                                            <span>联系电话</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>北京艾佳有限公司</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>专业</span>
+                                            <span>银行卡账号</span>
+                                            <span>开户行</span>
+                                            <span>开户账号</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>设计</span>
+                                            <span>100212012010</span>
+                                            <span>广州</span>
+                                            <span>100212012010</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>身份证复印件</span>
+                                            <span>学历学位证书复印件</span>
+                                            <span>照片资质版</span>
+                                            <span>照片电子版</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>其本人银行卡、身份证、签名的复印件</span>
+                                            <span>薪资是否确认</span>
+                                            <span>是否已邮件发生入职通告</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p class="pick">收起></p>
+                            </div>
+                        </li>
+                        <li class="list-all">
+                            <div class="list-text">
+                                <p>
+                                    <input type="checkbox" checked="checked" class="checked-none" data-style="checked">
+                                    <label class="tick"></label>
+                                </p>
+                                <p>1</p>
+                                <p>2017</p>
+                                <p>8</p>
+                                <p>ddsa</p>
+                                <p>语文</p>
+                                <p>18000</p>
+                                <p>商城</p>
+                                <p>
+                                    <a href="javascript:void(0)" class="more">
+                                        <svg role="img" class="search2">
+                                            <use xlink:href="#search2"></use>
+                                        </svg>
+                                        查看详细
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="can">
+                                <ul class="can-see">
+                                    <li>
+                                        <p class="see-head">
+                                            <span>姓名</span>
+                                            <span>员工编号</span>
+                                            <span>邮箱账号</span>
+                                            <span>联系电话</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>北京艾佳有限公司</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                            <span>IKE002602</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>专业</span>
+                                            <span>银行卡账号</span>
+                                            <span>开户行</span>
+                                            <span>开户账号</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>设计</span>
+                                            <span>100212012010</span>
+                                            <span>广州</span>
+                                            <span>100212012010</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>身份证复印件</span>
+                                            <span>学历学位证书复印件</span>
+                                            <span>照片资质版</span>
+                                            <span>照片电子版</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="see-head">
+                                            <span>其本人银行卡、身份证、签名的复印件</span>
+                                            <span>薪资是否确认</span>
+                                            <span>是否已邮件发生入职通告</span>
+                                        </p>
+                                        <p class="see-body">
+                                            <span>有</span>
+                                            <span>有</span>
+                                            <span>有</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p class="pick">收起></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="right-paging">
+                        <div class="paging-box">
+                            <div class="paging-left">
+                                <p class="left-one inactive">显示10项</p>
+                                <p class="left-two">当前显示1到10项，共20页</p>
+                            </div>
+                            <div class="paging-right">
+                                <ul>
+                                    <li><</li>
+                                    <li  class="active">1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                    <li>5</li>
+                                    <li>></li>
+                                    <li class="li-one">到1页</li>
+                                    <li class="li-two">确定</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--添加-->
+                <div class="add">
+                    <ul class="input-list">
+                        <li>
+                            <label>地区<i>*</i></label>
+                            <select class="drop-down">
+                                <option value="" disabled>请选择</option>
+                                <option value="北京">北京</option>
+                                <option value="上海">上海</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>项目组<i>*</i></label>
+                            <select class="drop-down">
+                                <option value="" disabled>请选择</option>
+                                <option value="北京">北京</option>
+                                <option value="上海">上海</option>
+                            </select>
+                            <input type="text" value="我是可手填的下拉框" class="input-dom">
+                        </li>
+                        <li>
+                            <label>物品名称<i>*</i></label>
+                            <input type="text" class="drop-down">
+                        </li>
+                        <li>
+                            <label>单位<i>*</i></label>
+                            <input type="text" class="drop-down">
+                        </li>
+                        <li>
+                            <label>领用人<i>*</i></label>
+                            <select class="drop-down">
+                                <option value="" disabled>请选择</option>
+                                <option value="北京">北京</option>
+                                <option value="上海">上海</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>领用日期<i>*</i></label>
+                            <input type="text" class="drop-date">
+                        </li>
+                        <li>
+                            <label>用途<i>*</i></label>
+                            <select class="drop-down">
+                                <option value="" disabled>请选择</option>
+                                <option value="北京">北京</option>
+                                <option value="上海">上海</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label>审核人<i>*</i></label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label>备注<i>*</i></label>
+                            <input type="text">
+                        </li>
+                        <li>
+                            <label>领用编号<i>*</i></label>
+                            <select class="drop-down">
+                                <option value="" disabled>请选择</option>
+                                <option value="北京">北京</option>
+                                <option value="上海">上海</option>
+                            </select>
+                        </li>
+                    </ul>
+                    <p class="input-bottom">
+                        <button class="cancel">取消</button>
+                        <button class="sure">确定</button>
+                    </p>
+                </div>
                 <!--分摊-->
                   <div class="share">
                          <ul class="input-list">
@@ -291,7 +1169,7 @@
                              <button class="sure">确定</button>
                          </p>
                      </div>
-            <!--公司汇总-->
+                <!--公司汇总-->
                 <div class="company">
                     <ul class="input-list">
                         <li>
@@ -338,8 +1216,8 @@
                         </ul>
                     </div>
                 </div>
-                    <!--税种汇总-->
-                    <div class="type">
+                <!--税种汇总-->
+                <div class="type">
                         <ul class="input-list">
                             <li>
                                 <label>税种<i>*</i></label>
@@ -384,6 +1262,20 @@
                                 </li>
                             </ul>
                         </div>
+                </div>
+                <!--删除-->
+                <div class="delete">
+                    <div class="del-head">
+                        <span>温馨提示</span>
+                        <small><img src="/images/delete.png"></small>
+                    </div>
+                    <div class="del-con">
+                        <p>您确定删除这条数据吗？</p>
+                        <p class="btn">
+                            <button>确定</button>
+                            <button>取消</button>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
