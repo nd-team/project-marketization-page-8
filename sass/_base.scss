@@ -71,7 +71,10 @@ svg{
   overflow: hidden;
 }
 .checked-none[data-style="checked"]:checked + label{
-  //background: url("/images/gou.png") #5a9bfd no-repeat center;
+  background: url("/images/gou.png") #5a9bfd no-repeat center;
+  border:none;
+  width:22px;
+  height:22px;
 }
 .checkedNum[data-style="checkeds"] + label:before{
   width: 13px;
@@ -86,7 +89,7 @@ svg{
   width: 20px;
   height: 20px;
   border-radius: 2px;
-  border: 1px solid #e2e2e2;
+  /*border: 1px solid #e2e2e2;*/
 }
 .clearfix:before, .clearfix:after{
   content: "";
@@ -275,11 +278,38 @@ header{
         font-size: 14px;
         margin-bottom: -1px;
       }
+      /*.a1 {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        margin:-26px 0 0 97px;
+
+        svg {
+          fill: #d0d0d1;
+          width: 15px;
+          height: 15px;
+
+        }
+      }
+      .a2{
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        margin:-26px 0 0 111px;
+
+        svg {
+          fill: #d0d0d1;
+          width: 15px;
+          height: 15px;
+        }
+      }*/
       .inactive{
-        background:url(/images/down.png) no-repeat 90% center;
+        background:url(/images/down3.svg) no-repeat 90% center;
+        background-size:15px;
       }
       .inactives{
-        background:url(/images/up.png) no-repeat 90% center;
+        background:url(/images/up.svg) no-repeat 90% center;
+        background-size:15px;
       }
       .inactive-line{
         background-color: #071a30;
@@ -297,10 +327,12 @@ header{
           }
         }
         .inactive{
-          background:url(/images/down.png) no-repeat 74% center;
+          background:url(/images/down3.svg) no-repeat 74% center;
+          background-size:15px;
         }
         .inactives{
-          background:url(/images/up.png) no-repeat 74% center;
+          background:url(/images/up.svg) no-repeat 74% center;
+          background-size:15px;
         }
       }
       .line-message{
@@ -361,10 +393,10 @@ header{
         li{
           padding: 5px 13px;
           background-color: white;
-          margin-right: 0.5%;
+          margin-right: 1.0%;
           border-radius: 2px;
           svg{
-            width: 1.8rem;
+            width: 1.4rem;
             height: 1.8rem;
             fill: #9a9a9a;
             vertical-align: middle;
@@ -383,27 +415,23 @@ header{
       }
       .search-content{
         display: flex;
-        background-color: #5a9bfd;
-        border: {
-          bottom: 2px solid #5a9bfd;
-          left: 3px solid #5a9bfd;
-        };
+        background-color: #ffffff;
         border-radius: 5px;
         justify-content: space-between;
         line-height: 36px;
         width: 25%;
-        input{
+        border: none;
+        input {
           width: 68%;
-          padding-left: 10px;
-          line-height: 36px;
-          margin: {
-            top:2px;
-          };
+          border: 1px solid #5a9bfd;
         }
         label{
           text-align: center;
           width: 32%;
           color: white;
+          background:#5a9bfd ;
+          box-sizing: border-box;
+          line-height: 36px;
         }
       }
     }

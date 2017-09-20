@@ -34,7 +34,7 @@
   overflow: hidden;
 }
 .checked-none[data-style="checked"]:checked + label{
-  //background: url("/images/gou.png") #5a9bfd no-repeat center;
+  background: url("/images/gou.png") #5a9bfd no-repeat center;
 }
 .checkedNum[data-style="checkeds"] + label:before{
   width: 13px;
@@ -1786,7 +1786,7 @@
   color: white;
 }
 .content-other{
-  margin-top: 12px !important;
+  margin-top: 30px !important;
 }
 @media (min-width: 1024px) and (max-width: 1550px){
   .right-nav{
@@ -2025,12 +2025,18 @@
   flex-direction: column;
   display: flex;
 
-  margin:1% 0% 1% 0%;
+  margin:20px 0 0 0;
+  .list-down::-webkit-scrollbar{
+    width:100px;
+    height:30px;
+    background:hotpink;
+  }
   .list-down {
     height: 630px;
     overflow-x: hidden;
     overflow-y: auto;
     background: #ffffff;
+
     .down-header {
       width: 100%;
       display: flex;
@@ -2044,7 +2050,7 @@
         display: flex;
         flex-direction: row;
         width:100%;
-        border-bottom:1px solid #E5E5E5;
+        /*border-bottom:1px solid #E5E5E5;*/
         span{
           display:inline-block;
           font-size: 14px;
@@ -2070,6 +2076,7 @@
             font-size:14px;
             flex:1;
             border-left:1px solid #E5E5E5;
+            border-bottom:1px solid #E5E5E5;
             margin:0 auto;
             -webkit-box-pack: center;
             -moz-justify-content: center;
@@ -2103,6 +2110,7 @@
 .check{
   width:20px !important;
   padding: 20px 10px 0px 10px;
+  border-bottom:1px solid #E5E5E5;
 }
 @mixin select-input{
   width: 80%;
@@ -2321,8 +2329,9 @@
         padding: 5px 13px;
         background-color: white;
         margin-right: 1%;
+        /*新改svg width*/
         svg{
-          width: 1.8rem;
+          width: 1.4rem;
           height: 1.8rem;
           fill: #9a9a9a;
           vertical-align: middle;
@@ -2358,9 +2367,6 @@
         width: 80%;
         padding-left: 10px;
         line-height: 36px;
-        margin: {
-          top:2px;
-        };
       }
       label{
         text-align: center;
@@ -2387,6 +2393,9 @@
 }
 .checked-none[data-style="checked"]:checked + label{
   background: url("/images/gou.png") #5a9bfd no-repeat center;
+  width:22px;
+  height:22px;
+  border:none;
 }
 .checkedNum[data-style="checkeds"] + label:before{
   width: 13px;
